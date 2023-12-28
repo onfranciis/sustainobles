@@ -8,6 +8,21 @@
   margin: 0;
 }
 
-body {
+html {
   background-color: #1d401d;
+}
+
+body {
+  max-width: 2000px;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 auto;
+}
+
+@layer components {
+  .btn {
+    @apply rounded-xl w-fit py-3 px-3;
+  }
 }
