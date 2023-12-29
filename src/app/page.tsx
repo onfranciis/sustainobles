@@ -1,5 +1,6 @@
 import One from "@/components/landingPage/One";
 import Six from "@/components/landingPage/Six";
+import Three from "@/components/landingPage/Three";
 import Two from "@/components/landingPage/Two";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <main className=" min-h-screen ">
       <One />
       <Two />
+      <Three />
       <Six />
     </main>
   );
