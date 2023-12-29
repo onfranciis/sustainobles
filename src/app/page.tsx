@@ -1,3 +1,4 @@
+import Five from "@/components/landingPage/Five";
 import One from "@/components/landingPage/One";
 import Six from "@/components/landingPage/Six";
 import Three from "@/components/landingPage/Three";
@@ -9,6 +10,7 @@ export default function Home() {
       <One />
       <Two />
       <Three />
+      <Five />
       <Six />
     </main>
   );
