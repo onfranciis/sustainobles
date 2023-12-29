@@ -1,4 +1,7 @@
+"use client";
+
 import Five from "@/components/landingPage/Five";
+import Four from "@/components/landingPage/Four";
 import One from "@/components/landingPage/One";
 import Six from "@/components/landingPage/Six";
 import Three from "@/components/landingPage/Three";
@@ -10,6 +13,7 @@ export default function Home() {
       <One />
       <Two />
       <Three />
+      <Four />
       <Five />
       <Six />
     </main>
