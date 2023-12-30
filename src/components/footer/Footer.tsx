@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="flex-col items-center  px-[100px] py-3 pt-16 ">
       <div className="flex justify-between">
-        <Link href="">
+        <Link href="/">
           <Image
             src="/logo.svg"
             alt="Sustainobles logo"
