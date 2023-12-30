@@ -18,6 +18,23 @@ const config: Config = {
         secondary: "#8AB440",
       },
     },
+    screens: {
+      // https://tailwindcss.com/docs/screens
+      'xl': {'min': '1250px'}, 
+      '-xl': {'max': '1200px'},
+
+      'lg': {'min': '1000px'},
+      '-lg': {'max': '990px'},
+
+      'md': {'min': '750px'},
+      '-md': {'max': '750px'},
+
+      'sm': {'min': '550px'},
+      '-sm': {'max': '550px'},
+      
+      'xs': {'min': '480px'},
+      '-xs': {'max': '480px'}
+    },
   },
   plugins: [],
 };
