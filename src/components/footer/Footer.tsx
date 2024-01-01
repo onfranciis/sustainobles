@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer className="flex-col items-center  px-[100px] py-3 pt-16 ">
-      <div className="flex justify-between">
+      <div className="flex -sm:flex-col gap-y-10 justify-between">
         <Link href="/" className="h-fit">
           <Image
             src="/logo.svg"
