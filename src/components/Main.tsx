@@ -21,7 +21,7 @@ const Main = () => {
     if (comingRef.current) {
       const st = new splitType(comingRef?.current);
       gsap.set(st.chars, {
-        y: 100,
+        y: 150,
       });
       gsap.set(comingRef.current, {
         opacity: 1,
