@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import NavBar from "@/components/navBar/NavBar";
 import Footer from "@/components/footer/Footer";
 import "./globals.css";
-import OG from "@/app/opengraph-image.png";
+import OG from "./opengraph-image.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
