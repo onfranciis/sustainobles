@@ -2,18 +2,18 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import hamburger from "../../assets/hamburger.svg"
-import cancel from "../../assets/cancel.svg"
-import minLogo from "../../assets/min-logo.svg"
+import hamburger from "../../assets/hamburger.svg";
+import cancel from "../../assets/cancel.svg";
+import minLogo from "../../assets/min-logo.svg";
 import { useState } from "react";
 
 const NavBar = () => {
-  const [isMenu, setIsMenu] = useState(false); 
+  const [isMenu, setIsMenu] = useState(false);
 
   return (
     <nav className="fixed z-50 top-0 flex items-center justify-between w-full px-[40px] -md:px-[30px] -sm:px-5 py-3 bg-primary">
-      {isMenu &&
-        <div className="w-full py-8 flex gap-14 flex-col items-center absolute top-[72px] left-0 bg-primary bg-opacity-[99%] text-2xl font-bold leading-tight">
+      {isMenu && (
+        <div className="w-full py-8 hidden gap-14 flex-col items-center absolute top-[72px] left-0 bg-primary bg-opacity-[99%] text-2xl font-bold leading-tight -xl:flex">
           <Link href="/" onClick={() => setIsMenu(false)} className="">
             <p>Home</p>
           </Link>
@@ -22,7 +22,11 @@ const NavBar = () => {
             <p>About us</p>
           </Link>
 
-          <Link href="/projects" onClick={() => setIsMenu(false)} className="flex items-center gap-1">
+          <Link
+            href="/projects"
+            onClick={() => setIsMenu(false)}
+            className="flex items-center gap-1"
+          >
             <p>Projects</p>
             <Image src="/arrow-down.svg" alt="" width={20} height={20} />
           </Link>
@@ -34,8 +38,8 @@ const NavBar = () => {
           <Link href="" onClick={() => setIsMenu(false)} className="">
             <p>Blog</p>
           </Link>
-        </div>      
-      }
+        </div>
+      )}
 
       <Link href="/">
         <Image
@@ -77,30 +81,32 @@ const NavBar = () => {
             <p>Blog</p>
           </Link>
         </div>
-        <button 
+
+        <Link href="" className="btn bg-secondary font-semibold">
+          <p className="text-primary px-7">Donate</p>
+        </Link>
+
+        <button
           onClick={() => setIsMenu(!isMenu)}
-          className="mr-12 -xs:mr-6 -xl:block hidden"
+          className="ml-7 -xs:mr-6 -xl:block hidden"
         >
-          {!isMenu ? 
+          {!isMenu ? (
             <Image
               src={hamburger.src}
               alt="hamburger icon"
               width={35}
               height={35}
             />
-          :
+          ) : (
             <Image
               src={cancel.src}
               alt="cancel icon"
               width={28}
               height={28}
+              className="ml-[7px]"
             />
-          }
+          )}
         </button>
-
-        <Link href="" className="btn bg-secondary font-semibold">
-          <p className="text-primary px-7">Donate</p>
-        </Link>
       </div>
     </nav>
   );
