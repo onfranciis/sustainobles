@@ -1,15 +1,14 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import NavBar from "@/components/navBar/NavBar";
-import Footer from "@/components/footer/Footer";
-import "./globals.css";
 import OG from "./opengraph-image.png";
+import Main from "@/components/Main";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Sustainobles",
-  description: "",
+  description: "Keep an eye for the launch",
   metadataBase: new URL("https://sustainobles.com.ng/"),
   openGraph: {
     images: [
@@ -38,10 +37,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} pt-[72px]`}>
-        <NavBar />
-        {children}
-        <Footer />
+      <body className={`${inter.className}`}>
+        <Main />
       </body>
     </html>
   );
