@@ -15,17 +15,17 @@ const DonateCardTop = ({
   return (
     <div className="w-fit">
       <div
-        className={` border-2 border-primary bg-secondary w-fit rounded-[20px] overflow-hidden flex justify-between gap-1`}
+        className={`mx-auto border-2 border-primary bg-secondary w-fit rounded-[20px] overflow-hidden flex -sm:flex-col justify-between gap-1`}
       >
         {options.map((option) => (
           <button
             key={option.name}
-            className={`text-[32px] font-semibold ${
+            className={`text-[32px] -md:text-xl font-semibold ${
               selection === option.name ? "text-secondary" : "text-primary"
             } py-[8px] px-[62px] ${
               selection === option.name ? "bg-primary" : "bg-secondary"
             } rounded-[20px] ${
-              selection === "Money" ? "rounded-l-none" : "rounded-r-none"
+              selection === "Money" ? "sm:rounded-l-none" : "sm:rounded-r-none"
             }`}
             onClick={() => setSelection(option.name)}
           >

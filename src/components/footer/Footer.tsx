@@ -6,8 +6,8 @@ const Footer = () => {
   const year = date.getFullYear();
 
   return (
-    <footer className="flex-col items-center  px-[100px] py-3 pt-16 ">
-      <div className="flex justify-between">
+    <footer className="flex-col items-center  px-[100px] -md:px-16 -sm:px-10 py-3 pt-16 -sm:pt-10">
+      <div className="flex flex-wrap gap-y-10 justify-between -sm:flex-col -sm:item-center -sm:justify-center">
         <Link href="/" className="h-fit">
           <Image
             src="/logo.svg"
@@ -17,7 +17,7 @@ const Footer = () => {
           />
         </Link>
 
-        <div className="flex flex-col items-center text-[#CCCCCC]">
+        <div className="flex flex-col sm:items-center text-[#CCCCCC]">
           <p className="mb-5 font-semibold text-3xl underline underline-offset-4  text-[#F6FFDC]">
             Contact
           </p>
@@ -26,7 +26,7 @@ const Footer = () => {
           <Link href="">Email: sustainobles@sus.com</Link>
         </div>
 
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col sm:items-center">
           <p className="mb-5 font-semibold text-3xl underline underline-offset-4  text-[#F6FFDC]">
             Socials
           </p>
