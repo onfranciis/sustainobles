@@ -3,12 +3,12 @@ import DonateCard from "./donateCard/DonateCard";
 
 const Four = () => {
   return (
-    <div className="px-[100px] py-5 bg-white pb-9">
-      <div className="flex items-center justify-center gap-11 p-8  bg-[url('/landing-four.png')] bg-no-repeat bg-center bg-cover rounded-[20px] ">
+    <div className="px-16 -md:px-12 -sm:px-8 -xs:px-5 py-5 bg-white pb-9">
+      <div className="flex -xl:flex-col items-center justify-center gap-11 p-8  bg-[url('/landing-four.png')] bg-no-repeat bg-center bg-cover rounded-[20px] ">
         <div className=" max-w-[497px]">
-          <p className="font-extrabold text-6xl mb-8">Donate Now</p>
+          <p className="mb-8 text-[64px] -lg:text-[52px] -md:text-[40px] font-bold">Donate Now</p>
 
-          <p className={`${poppins.className} font-medium text-[40px]`}>
+          <p className={`${poppins.className} text-[40px] -lg:text-4xl -md:text-2xl leading-normal`}>
             Help us <span className="text-secondary">reach </span>
             that Child. Help us <span className="text-secondary">empower</span>.
             Help us make
