@@ -9,7 +9,7 @@ const Three = () => {
       >
         Completed Projects
       </p>
-      <div className="flex overflow-x-auto gap-10 pb-2 px-[100px] -md:px-[50px]">
+      <div className="flex overflow-x-auto gap-10 pb-2 px-[5px] -md:px-[50px]">
         <ProjectCard />
         <ProjectCard />
         <ProjectCard />
