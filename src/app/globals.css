@@ -19,6 +19,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   margin: 0 auto;
+  scroll-behavior: smooth;
 }
 
 @layer components {

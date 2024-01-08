@@ -11,18 +11,8 @@ const DonateCardBottom = ({
   setPhoneNumber,
   setItem,
 }: IDonateCardBottomProp) => {
-  return selection === "Money" ? (
-    <div className="w-full mt-12">
-      <input
-        type="text"
-        className="w-full border-[1px] border-primary rounded-[20px] py-4 px-5 font-semibold text-base placeholder:font-semibold placeholder:text-base placeholder:text-black mb-[48px]"
-        placeholder="Amount"
-        value={amount}
-        onChange={(e) => setAmount(e.target.value)}
-      />
-    </div>
-  ) : (
-    <div className="w-full mt-12 gap-2 flex flex-col justify-center">
+  return (
+    <div className="w-full mt-[13.31px] gap-2 flex flex-col justify-center">
       <input
         type="text"
         className="w-full border-[1px] border-primary rounded-[20px] py-4 px-5 font-semibold text-base placeholder:font-semibold placeholder:text-base placeholder:text-black"
@@ -38,14 +28,23 @@ const DonateCardBottom = ({
         value={phoneNumber}
         onChange={(e) => setPhoneNumber(e.target.value)}
       />
-
-      <input
-        type="text"
-        className="w-full border-[1px] border-primary rounded-[20px] py-4 px-5 font-semibold text-base placeholder:font-semibold placeholder:text-base placeholder:text-black"
-        placeholder="What you want to donate"
-        value={item}
-        onChange={(e) => setItem(e.target.value)}
-      />
+      {selection === "Money" ? (
+        <input
+          type="text"
+          className="w-full border-[1px] border-primary rounded-[20px] py-4 px-5 font-semibold text-base placeholder:font-semibold placeholder:text-base placeholder:text-black"
+          placeholder="Amount"
+          value={amount}
+          onChange={(e) => setAmount(e.target.value)}
+        />
+      ) : (
+        <input
+          type="text"
+          className="w-full border-[1px] border-primary rounded-[20px] py-4 px-5 font-semibold text-base placeholder:font-semibold placeholder:text-base placeholder:text-black"
+          placeholder="What you want to donate"
+          value={item}
+          onChange={(e) => setItem(e.target.value)}
+        />
+      )}
     </div>
   );
 };

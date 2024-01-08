@@ -11,10 +11,12 @@ const Two = () => {
   return (
     <div className={poppins.className}>
       <div className="relative px-16 -md:px-12 -sm:px-8 -xs:px-5">
-        <div className="bg-[url('/landing-two.png')] bg-no-repeat bg-center bg-cover mt-[150px] mb-[-200px] p-8 pr-[73px] pb-12 rounded-2xl left-0 right-0 ml-auto mr-auto">
-          <p className="mb-4 text-[64px] -lg:text-[52px] -md:text-[40px] font-bold">Our Purpose</p>
+        <div className="bg-[url('/landing-two-a.png')] bg-no-repeat bg-center bg-cover bg-fixed mt-[150px] mb-[-200px] p-8 pr-[73px] pb-12 rounded-2xl left-0 right-0 ml-auto mr-auto">
+          <p className="mb-4 text-[64px] -lg:text-[52px] -md:text-[40px] font-bold">
+            Our Purpose
+          </p>
 
-          <p className="text-[40px] -lg:text-4xl -md:text-2xl leading-normal opacity-80">
+          <p className="text-4xl -md:text-2xl leading-normal opacity-80">
             Empowering Children in disadvantaged areas by championing recycling
             initiatives, organizing book clubs and using the earning to fund
             their education. Also, harnessing and leveraging the power of
