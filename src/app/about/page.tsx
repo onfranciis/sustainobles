@@ -1,10 +1,11 @@
 import Image from "next/image";
 import happy from "../../assets/happy.png";
 import schlOne from "../../assets/school-one.png";
+import { poppins } from "@/components/landingPage/Two";
 
 export default function Home() {
   return (
-    <main className="min-h-screen text-2xl -md:text-xl text-black">
+    <main className="min-h-screen text-2xl -md:text-xl text-[#1e1e1e]">
       <div className="h-64 -sm:h-52 px-14 bg-[#8AB440] flex justify-center items-center">
         <h1 className="text-5xl -sm:text-4xl font-bold text-center uppercase">
           About Sustainobles
@@ -19,19 +20,20 @@ export default function Home() {
 
       <div
         id="us"
-        className="py-14 px-14 bg-[#F6FFDC] flex -xl:flex-col gap-10"
+        className="py-14 px-14 bg-[#F6FFDC] flex -xl:flex-col items-center gap-20"
       >
         <div>
           <h2 className="mb-8 -md:mb-5 text-5xl -md:text-4xl -xl:text-center font-bold uppercase">
             Who We Are
           </h2>
           <p>
-            We at Sustainobles are a dedicated force for positive change. We’re
-            all about making a real difference. By focusing on sustainable
-            actions and taking initiatives on acts like recycling etc., we
-            transform lives by funding education, helping to pay children’s
-            school fees, providing stationery items, and using football as a
-            catalyst for holistic development in indigent and rural children.
+            We at Sustainobles are a dedicated force for positive change.
+            We&apos;re all about making a real difference. By focusing on
+            sustainable actions and taking initiatives on acts like recycling
+            etc., we transform lives by funding education, helping to pay
+            children&apos;s school fees, providing stationery items, and using
+            football as a catalyst for holistic development in indigent and
+            rural children.
           </p>
         </div>
 
@@ -66,11 +68,11 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="px-14 py-11 text-white">
-        <h2 className="mb-4 text-5xl -md:text-4xl text-center font-bold uppercase">
-          Vision and Mission
+      <div className={`px-14 py-11 text-white  ${poppins.className}`}>
+        <h2 className="mb-4 text-4xl -md:text-4xl text-center font-bold uppercase">
+          Vision & Mission
         </h2>
-        <div className="flex -sm:flex-col">
+        <div className="flex -sm:flex-col text-2xl ">
           <p>
             &quot;We envision a world where Sustainobles plays a pivotal role in
             transforming the lives of children in rural and slum areas,
@@ -90,7 +92,7 @@ export default function Home() {
 
       <div
         id="started"
-        className="py-12 px-14 bg-[#F6FFDC] flex -xl:flex-col gap-10"
+        className="py-12 px-14 bg-[#F6FFDC] flex -xl:flex-col items-center gap-20"
       >
         <div>
           <h2 className="mb-8 -md:mb-5 text-5xl -md:text-4xl -xl:text-center font-bold uppercase">
@@ -136,15 +138,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="purpose" className="pt-7 pb-16 px-14 bg-[#F6FFDC]">
+      <div id="purpose" className="pt-8 pb-[70px] px-14 bg-[#F6FFDC]">
         <div
-          style={{ backgroundImage: `url(${happy.src})` }}
-          className="col-span-2 pt-3 pb-10 px-8 bg-cover text-white rounded-2xl"
+          style={{ backgroundImage: `url("/landing-two-a.png")` }}
+          className="col-span-2 pt-3 pb-10 px-8 bg-cover text-white rounded-2xl bg-fixed bg-center"
         >
           <h2 className="mb-4 text-[64px] -md:text-5xl leading-normal font-bold">
             Our Purpose
           </h2>
-          <p className="text-[40px] -lg:text-4xl -md:text-2xl leading-normal">
+          <p className="text-[40px] -lg:text-4xl -md:text-2xl leading-normal opacity-80">
             Empowering Children in disadvantaged areas by championing recycling
             initiatives, organizing book clubs and using the earning to fund
             their education. Also, harnessing and leveraging the power of
