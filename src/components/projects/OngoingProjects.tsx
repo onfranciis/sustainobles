@@ -18,7 +18,7 @@ const DATA: IProjectCardProp["Data"][] = [
     title: "Collection of Bottles",
     body: "At Sustainobles, we harness the power of collective action and sustainability to create positive change for underprivileged children. By recycling donated bottles, we break the cycle of poverty, funding education fees and essential needs. Your contribution not only supports education but also promotes a cleaner, greener planet. Join us in this transformative journey – every bottle you donate becomes a symbol of hope, paving the way for brighter tomorrows.",
     image: "/projects/ongoing-projects4.png",
-    url: "",
+    url: "/projects/gallery/collection-of-bottles",
     type: "One",
   },
   {
