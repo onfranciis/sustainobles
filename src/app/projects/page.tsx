@@ -3,6 +3,7 @@ import happy from "../../assets/happy.png";
 import schlOne from "../../assets/school-one.png";
 import schlTwo from "../../assets/school-two.png";
 import { poppins } from "@/components/landingPage/Two";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,9 +22,12 @@ export default function Home() {
           sustainable projects and we can pride ourselves and also take pride in
           our sponsors and volunteers as growing...
         </p>
-        <button className="py-3 px-12 absolute bottom-6 right-6 rounded-xl bg-[#8AB440] text-[#1D401D]">
+        <Link
+          href="/projects/completed"
+          className="py-3 px-12 absolute bottom-6 right-6 rounded-xl bg-[#8AB440] text-[#1D401D]"
+        >
           See More
-        </button>
+        </Link>
       </div>
 
       <div
@@ -40,9 +44,12 @@ export default function Home() {
           sustainable projects and we can pride ourselves and also take pride in
           our sponsors and volunteers as growing...
         </p>
-        <button className="py-3 px-12 absolute bottom-6 right-6 rounded-xl bg-[#8AB440] text-[#1D401D]">
+        <Link
+          href=""
+          className="py-3 px-12 absolute bottom-6 right-6 rounded-xl bg-[#8AB440] text-[#1D401D]"
+        >
           See More
-        </button>
+        </Link>
       </div>
 
       <div
@@ -53,9 +60,12 @@ export default function Home() {
           Upcoming Projects
         </h2>
         <p className="text-[36px] -lg:text-4xl -md:text-2xl leading-normal"></p>
-        <button className="py-3 px-12 absolute bottom-6 right-6 rounded-xl bg-[#8AB440] text-[#1D401D]">
+        <Link
+          href=""
+          className="py-3 px-12 absolute bottom-6 right-6 rounded-xl bg-[#8AB440] text-[#1D401D]"
+        >
           See More
-        </button>
+        </Link>
       </div>
     </main>
   );
