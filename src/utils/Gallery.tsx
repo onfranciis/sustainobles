@@ -23,4 +23,8 @@ export const GallerySections = [
     slug: "orphanage-outreach",
     number: 4,
   },
+  {
+    slug: "charity-football-tournament",
+    number: 74,
+  },
 ];

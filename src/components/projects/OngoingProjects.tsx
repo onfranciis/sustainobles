@@ -25,7 +25,7 @@ const DATA: IProjectCardProp["Data"][] = [
     title: "Charity Football Tournament",
     body: "We launched a football club which serves as community engagement initiatives. Participation in sport represents an opportunity for the rural child to develop their skills, competence and social network. Teaching them teamwork, fair play and goal setting. The aim is targeted at keeping young boys away from the street and raise money for children living in marginalized rural communities through football tournaments between influencers, communities, celebrities.",
     image: "/projects/ongoing-projects3.png",
-    url: "",
+    url: "/projects/gallery/charity-football-tournament",
     type: "Two",
   },
   {
