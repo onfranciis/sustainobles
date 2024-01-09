@@ -39,7 +39,7 @@ const DATA: IProjectCardProp["Data"][] = [
     title: "Monthly Essay Competition",
     body: "We decided to start a the monthly essay competition, to help sharpen the children’s mind. After reading, we decided to test their vocabulary, mode of writing, grammar and spelling amongst others. It gives kids a chance to compete and learn from the competition. The topic for the Junior Secondary School: “Challenges and Opportunities for Education in Nigeria: How do some factors such as poverty, conflict, and gender affect the quality of education for many in Nigeria? What are some possible solutions to this? And for Senior Secondary School “The impact of the internet (or social media): Discuss the positive and negative effects of technology/social media on young people's lives. Reflect on how it has changed the ways you learn, communicate, and spend your time.",
     image: "/projects/ongoing-projects1.png",
-    url: "",
+    url: "/projects/gallery/monthly-essay-competition",
     type: "Two",
   },
 ];

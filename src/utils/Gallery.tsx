@@ -35,4 +35,8 @@ export const GallerySections = [
     slug: "book-reading-club",
     number: 17,
   },
+  {
+    slug: "monthly-essay-competition",
+    number: 2,
+  },
 ];
