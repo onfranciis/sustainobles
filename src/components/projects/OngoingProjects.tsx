@@ -32,7 +32,7 @@ const DATA: IProjectCardProp["Data"][] = [
     title: "Book Reading Club",
     body: "We decided to start a book club to help children improve their reading skills and vocabulary. the first book we read was ‘Who cares” which addressed societal ills and the characters in the Book. The Book “ Who cares ” Is a drama written by Barrister Yekini focused on fraud and scams amongst the Nigerian youth and that’s the major reason it was selected as it is perfect for everything happening in todays society. We started with 16 kids on the first day and subsequently our numbers increased.  It is said that “The more that you read, the more things you will know and the more that you learn, the more places you'll go”.",
     image: "/projects/ongoing-projects2.png",
-    url: "",
+    url: "/projects/gallery/book-reading-club",
     type: "One",
   },
   {

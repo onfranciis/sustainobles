@@ -31,4 +31,8 @@ export const GallerySections = [
     slug: "collection-of-bottles",
     number: 32,
   },
+  {
+    slug: "book-reading-club",
+    number: 17,
+  },
 ];
