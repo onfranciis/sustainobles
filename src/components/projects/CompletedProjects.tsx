@@ -25,7 +25,7 @@ const DATA: IProjectCardProp["Data"][] = [
     title: "Borehole in Makoko",
     body: "We decided to build a borehole in Makoko for them to have clean and drinkable water as it is essential for our health. We also bought Two Canoes and both are functional and is being used to carry the students from Makoko down to areas like third mainland bridge and neighboring communities. And bring them back the next day. Sort of like a school bus. We also bought a generator for them to use to pump water when there is no light.",
     image: "/projects/completed-projects5.png",
-    url: "",
+    url: "/projects/gallery/borehole-in-makoko",
     type: "Two",
   },
   {
