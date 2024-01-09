@@ -45,7 +45,7 @@ export default function Home() {
           our sponsors and volunteers as growing...
         </p>
         <Link
-          href=""
+          href="/projects/ongoing"
           className="py-3 px-12 absolute bottom-6 right-6 rounded-xl bg-[#8AB440] text-[#1D401D]"
         >
           See More
