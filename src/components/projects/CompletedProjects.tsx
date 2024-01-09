@@ -46,7 +46,7 @@ const DATA: IProjectCardProp["Data"][] = [
     title: "Summer Coaching",
     body: "We kicked off with academic classes and the Skill acquisition followed,  we gave our best to make sure the kids have a sense of direction and are prepared for the upcoming school session. At the end of the summer lessons, the children acquired  skills asides lessons. We had Volunteer teachers that have been coming through, we also got book donations that were used for the lesson.  ",
     image: "/projects/completed-projects2.png",
-    url: "",
+    url: "/projects/gallery/summer-coaching",
     type: "One",
   },
   {
