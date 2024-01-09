@@ -9,3 +9,18 @@ export interface IDonateCardBottomProp {
   setPhoneNumber: (data: string) => void;
   setItem: (data: string) => void;
 }
+
+export interface IProjectCardProp {
+  Data: {
+    title: string;
+    body: string;
+    image: string;
+    url: string;
+    type: "One" | "Two";
+  };
+}
+
+export interface IModalProjectBottomProps {
+  numberOfImages: number;
+  directory: string;
+}
