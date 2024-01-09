@@ -40,9 +40,10 @@ export default function Home() {
         <p
           className={`text-[36px] -lg:text-4xl -md:text-2xl leading-normal opacity-80 ${poppins.className}`}
         >
-          Since our inception, Sustainobles have engaged in and completed many
-          sustainable projects and we can pride ourselves and also take pride in
-          our sponsors and volunteers as growing...
+          Sustainobles is actively involved in and progressing through various
+          ongoing sustainable projects. We take pride in our current initiatives
+          and extend our gratitude to sponsors and volunteers who contribute to
+          the success of these projects as they unfold and develop.
         </p>
         <Link
           href="/projects/ongoing"
@@ -59,7 +60,11 @@ export default function Home() {
         <h2 className="mb-4 text-[64px] -lg:text-[52px] -md:text-[40px] font-bold uppercase">
           Upcoming Projects
         </h2>
-        <p className="text-[36px] -lg:text-4xl -md:text-2xl leading-normal"></p>
+        <p className="text-[36px] -lg:text-4xl -md:text-2xl leading-normal">
+          Sustainobles is preparing for upcoming sustainable projects. We look
+          forward to launching and advancing through these future endeavors with
+          the support of our sponsors and volunteers.
+        </p>
         <Link
           href=""
           className="py-3 px-12 absolute bottom-6 right-6 rounded-xl bg-[#8AB440] text-[#1D401D]"
