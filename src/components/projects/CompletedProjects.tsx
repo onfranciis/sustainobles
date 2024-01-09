@@ -53,7 +53,7 @@ const DATA: IProjectCardProp["Data"][] = [
     title: "Orphanage Outreach",
     body: "We took to sharing foodstuffs and provisions to the Mpaniwu Orphanage home on the 30th of December 2023. The country's economy is dwindling, we understand that caring for a large family will be hard, also in the spirit of the festivities going on. So we did our bit and enjoyed every second of providing for the orphanage home.",
     image: "/projects/completed-projects1.png",
-    url: "",
+    url: "/projects/gallery/orphanage-outreach",
     type: "Two",
   },
 ];
