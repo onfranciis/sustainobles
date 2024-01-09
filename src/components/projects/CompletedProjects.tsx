@@ -25,14 +25,14 @@ const DATA: IProjectCardProp["Data"][] = [
     title: "Borehole in Makoko",
     body: "We decided to build a borehole in Makoko for them to have clean and drinkable water as it is essential for our health. We also bought Two Canoes and both are functional and is being used to carry the students from Makoko down to areas like third mainland bridge and neighboring communities. And bring them back the next day. Sort of like a school bus. We also bought a generator for them to use to pump water when there is no light.",
     image: "/projects/completed-projects5.png",
-    url: "/projects/gallery/borehole-in-makoko",
+    url: "",
     type: "Two",
   },
   {
     title: "Pad a Girl Child",
     body: "Sustainobles' \"Pad a Girl Child\" project aligns with SDG 3, emphasizing good health and well-being. Addressing menstrual hygiene challenges, the initiative combats school absenteeism among girls. Collaboration with MBGN '22 ensured the distribution of over 300 sanitary pads, promoting inclusivity and gender equality in line with SDG 11. Seminars for children aged 10-15 emphasized the importance of hard work, and over 20 food boxes were distributed, contributing to overall community well-being. Together, we're advancing education, gender equality, and inclusive urban development.",
     image: "/projects/completed-projects4.png",
-    url: "",
+    url: "/projects/gallery/pad-a-girl-child",
     type: "One",
   },
   {
