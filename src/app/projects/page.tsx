@@ -65,12 +65,6 @@ export default function Home() {
           forward to launching and advancing through these future endeavors with
           the support of our sponsors and volunteers.
         </p>
-        <Link
-          href=""
-          className="py-3 px-12 absolute bottom-6 right-6 rounded-xl bg-[#8AB440] text-[#1D401D]"
-        >
-          See More
-        </Link>
       </div>
     </main>
   );
