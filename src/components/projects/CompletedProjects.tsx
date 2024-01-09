@@ -39,7 +39,7 @@ const DATA: IProjectCardProp["Data"][] = [
     title: "Back to School Project",
     body: "Our program provides essential resources to overcome barriers to education, offering items like books, school footwear, socks, bags, whiteboards, and lunch boxes. Focused on reducing dropout rates and improving learning outcomes, we aim to create an inclusive and equitable educational environment. During our back-to-school initiative, we raised 392,800 Naira, enabling us to distribute over 500 sandals, socks, bags, lunch boxes, and stationery items to children in Lokoja, Enugu Ezike, and Orile. While not all children received bags as planned, we ensured that each child received essential stationery items. Additionally, we utilized funds to pay the school fees of 76 children using plastic. Your support has made a meaningful impact on the education journey of these students.",
     image: "/projects/completed-projects3.png",
-    url: "",
+    url: "/projects/gallery/back-to-school-project",
     type: "Two",
   },
   {

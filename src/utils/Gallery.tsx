@@ -11,4 +11,8 @@ export const GallerySections = [
     slug: "pad-a-girl-child",
     number: 36,
   },
+  {
+    slug: "back-to-school-project",
+    number: 59,
+  },
 ];
