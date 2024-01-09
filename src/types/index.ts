@@ -19,3 +19,8 @@ export interface IProjectCardProp {
     type: "One" | "Two";
   };
 }
+
+export interface IModalProjectBottomProps {
+  numberOfImages: number;
+  directory: string;
+}
