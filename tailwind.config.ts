@@ -1,4 +1,3 @@
-import { GridStyle } from "./src/utils/GridPlugin";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -17,36 +16,26 @@ const config: Config = {
       colors: {
         primary: "#1D401D",
         secondary: "#8AB440",
-        blackText: "#1e1e1e",
       },
     },
     screens: {
       // https://tailwindcss.com/docs/screens
-      xl: { min: "1250px" },
-      "-xl": { max: "1200px" },
+      'xl': {'min': '1250px'}, 
+      '-xl': {'max': '1200px'},
 
-      lg: { min: "1000px" },
-      "-lg": { max: "1000px" },
+      'lg': {'min': '1000px'},
+      '-lg': {'max': '1000px'},
 
-      md: { min: "750px" },
-      "-md": { max: "750px" },
+      'md': {'min': '750px'},
+      '-md': {'max': '750px'},
 
-      sm: { min: "550px" },
-      "-sm": { max: "550px" },
-
-      xs: { min: "480px" },
-      "-xs": { max: "480px" },
+      'sm': {'min': '550px'},
+      '-sm': {'max': '550px'},
+      
+      'xs': {'min': '480px'},
+      '-xs': {'max': '480px'}
     },
   },
-  plugins: [
-    function ({ addUtilities }: any) {
-      const newUtilities = {
-        ...GridStyle,
-      };
-
-      addUtilities(GridStyle, ["responsive"]);
-    },
-  ],
+  plugins: [],
 };
-
 export default config;

@@ -15,14 +15,14 @@ const DonateCardTop = ({
   return (
     <div className="w-fit">
       <div
-        className={`mx-auto border-2 border-primary bg-secondary w-fit rounded-[20px] overflow-hidden flex justify-between gap-1`}
+        className={`mx-auto border-2 border-primary bg-secondary w-fit rounded-[20px] overflow-hidden flex -sm:flex-col justify-between gap-1`}
       >
         {options.map((option) => (
           <button
             key={option.name}
-            className={`text-[32px] -lg:text-2xl -md:text-lg -sm:text-base font-semibold ${
+            className={`text-[32px] -md:text-xl font-semibold ${
               selection === option.name ? "text-secondary" : "text-primary"
-            } py-[8px] px-[62px] -lg:px-12 -md:px-10 -sm:px-7 ${
+            } py-[8px] px-[62px] ${
               selection === option.name ? "bg-primary" : "bg-secondary"
             } rounded-[20px] ${
               selection === "Money" ? "sm:rounded-l-none" : "sm:rounded-r-none"
@@ -35,7 +35,7 @@ const DonateCardTop = ({
       </div>
 
       {selection === "Material" ? (
-        <p className="font-medium text-xl -lg:text-base -md:text-sm -sm:text-xs inline-flex justify-end gap-2 my-[15px] w-full">
+        <p className="font-medium text-xl inline-flex gap-2 my-[15px] justify-end w-full">
           <Image
             alt=""
             width={25}
@@ -46,7 +46,7 @@ const DonateCardTop = ({
           Click here to donate money
         </p>
       ) : (
-        <p className="font-medium text-xl -lg:text-base -md:text-sm -sm:text-xs inline-flex gap-2 my-[15px] w-full">
+        <p className="font-medium text-xl inline-flex gap-2 my-[15px]  w-full">
           Click here to donate materials
           <Image
             alt=""
