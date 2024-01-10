@@ -1,3 +1,5 @@
+import { CSSProperties } from "react";
+
 export interface IDonateCardBottomProp {
   selection: string;
   amount: string;
@@ -23,4 +25,8 @@ export interface IProjectCardProp {
 export interface IModalProjectBottomProps {
   numberOfImages: number;
   directory: string;
+}
+
+export interface IGridPlugin {
+  [value: string]: CSSProperties;
 }

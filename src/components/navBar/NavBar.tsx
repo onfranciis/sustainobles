@@ -28,15 +28,6 @@ const NavBar = () => {
             className="flex items-center gap-1"
           >
             <p>Projects</p>
-            <Image src="/arrow-down.svg" alt="" width={20} height={20} />
-          </Link>
-
-          <Link href="" onClick={() => setIsMenu(false)} className="">
-            <p>Gallery</p>
-          </Link>
-
-          <Link href="" onClick={() => setIsMenu(false)} className="">
-            <p>Blog</p>
           </Link>
         </div>
       )}
