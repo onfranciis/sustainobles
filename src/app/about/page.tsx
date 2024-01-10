@@ -41,13 +41,17 @@ export default function Home() {
           <div className="flex flex-col gap-2">
             <Image
               className="h-[392px] -md:h-[294px] -sm:h-[255px] w-[295px] -md:w-[221px] -sm:w-[192px] object-cover rounded-[32px]"
-              src={schlOne}
+              src="/about-us-grid/image2.png"
               alt=""
+              height={500}
+              width={500}
             />
             <Image
               className="h-[352px] -md:h-[264px] -sm:h-[229px] w-[295px] -md:w-[221px] -sm:w-[192px] object-cover rounded-[32px]"
-              src={schlOne}
+              src="/about-us-grid/image7.png"
               alt=""
+              height={500}
+              width={500}
             />
           </div>
 
@@ -55,14 +59,18 @@ export default function Home() {
             <div className="w-max h-max p-2 pr-0 bg-[#F6FFDC] absolute z-10 bottom-[400px] -md:bottom-[300px] -sm:bottom-[260px] right-0 border-9.5 rounded-[32px]">
               <Image
                 className="h-[276px] -md:h-[207px] -sm:h-[179px] w-[390px] -md:w-[293px] -sm:w-[254px] object-cover rounded-[32px]"
-                src={schlOne}
+                src="/about-us-grid/image6.png"
                 alt=""
+                height={500}
+                width={500}
               />
             </div>
             <Image
               className="h-[400px] -md:h-[300px] -sm:h-[260px] w-[295px] -md:w-[221px] -sm:w-[192px] object-cover rounded-[32px]"
-              src={schlOne}
+              src="/about-us-grid/image1.png"
               alt=""
+              height={500}
+              width={500}
             />
           </div>
         </div>
@@ -111,13 +119,17 @@ export default function Home() {
           <div className="flex flex-col gap-2">
             <Image
               className="h-[392px] -md:h-[294px] -sm:h-[255px] w-[295px] -md:w-[221px] -sm:w-[192px] object-cover rounded-[32px]"
-              src={schlOne}
+              src="/about-us-grid/image5.png"
               alt=""
+              height={500}
+              width={500}
             />
             <Image
               className="h-[352px] -md:h-[264px] -sm:h-[229px] w-[295px] -md:w-[221px] -sm:w-[192px] object-cover rounded-[32px]"
-              src={schlOne}
+              src="/about-us-grid/image3.png"
               alt=""
+              height={500}
+              width={500}
             />
           </div>
 
@@ -125,14 +137,18 @@ export default function Home() {
             <div className="w-max h-max p-2 pr-0 bg-[#F6FFDC] absolute z-10 bottom-[400px] -md:bottom-[300px] -sm:bottom-[260px] right-0 border-9.5 rounded-[32px]">
               <Image
                 className="h-[276px] -md:h-[207px] -sm:h-[179px] w-[390px] -md:w-[293px] -sm:w-[254px] object-cover rounded-[32px]"
-                src={schlOne}
+                src="/about-us-grid/image8.png"
                 alt=""
+                height={500}
+                width={500}
               />
             </div>
             <Image
               className="h-[400px] -md:h-[300px] -sm:h-[260px] w-[295px] -md:w-[221px] -sm:w-[192px] object-cover rounded-[32px]"
-              src={schlOne}
+              src="/about-us-grid/image4.png"
               alt=""
+              height={500}
+              width={500}
             />
           </div>
         </div>
