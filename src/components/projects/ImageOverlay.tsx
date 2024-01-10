@@ -17,10 +17,10 @@ const ImageOverlay = ({ img, title, body, link }: IImageOverlay) => {
       </p>
       {link &&
         <Link
-          href={link.text}
+          href={link.address}
           className="py-3 -sm:py-2.5 px-12 -sm:px-6 -sm:text-xs absolute bottom-6 right-6 rounded-xl -sm:rounded-lg bg-[#8AB440] text-[#1D401D]"
         >
-          {link.address}
+          {link.text}
         </Link>      
       }
 

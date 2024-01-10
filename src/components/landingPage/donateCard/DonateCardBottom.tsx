@@ -15,7 +15,7 @@ const DonateCardBottom = ({
     <div className="w-full mt-[13.31px] gap-2 flex flex-col justify-center">
       <input
         type="text"
-        className="w-full border-[1px] border-primary rounded-[20px] py-4 -sm:py-3 px-5 font-semibold placeholder:font-semibold placeholder:text-base -sm:placeholder:text-xs placeholder:text-black"
+        className="w-full border-[1px] border-primary bg-inherit rounded-[20px] py-4 -sm:py-3 px-5 font-semibold placeholder:font-semibold placeholder:text-base -sm:placeholder:text-xs placeholder:text-black"
         placeholder="Name"
         value={name}
         onChange={(e) => setName(e.target.value)}
@@ -23,7 +23,7 @@ const DonateCardBottom = ({
 
       <input
         type="text"
-        className="w-full border-[1px] border-primary rounded-[20px] py-4 -sm:py-3 px-5 font-semibold placeholder:font-semibold placeholder:text-base -sm:placeholder:text-xs placeholder:text-black"
+        className="w-full border-[1px] border-primary bg-inherit rounded-[20px] py-4 -sm:py-3 px-5 font-semibold placeholder:font-semibold placeholder:text-base -sm:placeholder:text-xs placeholder:text-black"
         placeholder="Phone number"
         value={phoneNumber}
         onChange={(e) => setPhoneNumber(e.target.value)}
@@ -31,7 +31,7 @@ const DonateCardBottom = ({
       {selection === "Money" ? (
         <input
           type="text"
-          className="w-full border-[1px] border-primary rounded-[20px] py-4 -sm:py-3 px-5 font-semibold placeholder:font-semibold placeholder:text-base -sm:placeholder:text-xs placeholder:text-black"
+          className="w-full border-[1px] border-primary bg-inherit rounded-[20px] py-4 -sm:py-3 px-5 font-semibold placeholder:font-semibold placeholder:text-base -sm:placeholder:text-xs placeholder:text-black"
           placeholder="Amount"
           value={amount}
           onChange={(e) => setAmount(e.target.value)}

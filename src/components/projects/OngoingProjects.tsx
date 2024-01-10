@@ -3,7 +3,7 @@ import ProjectsCard from "./ProjectsCard";
 
 const OngoingProjects = () => {
   return (
-    <main className="min-h-screen bg-white flex flex-col gap-[60px] py-20">
+    <main className="min-h-screen bg-tertiary flex flex-col gap-[60px] py-20">
       {DATA.map((card) => (
         <ProjectsCard key={card.title} Data={card} />
       ))}

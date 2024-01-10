@@ -24,7 +24,7 @@ const Two = () => {
           </p>
         </div>
       </div>
-      <div className="bg-white min-h-[300px] -sm:min-h-[200px]"></div>
+      <div className="bg-tertiary min-h-[300px] -sm:min-h-[200px]"></div>
     </div>
   );
 };
