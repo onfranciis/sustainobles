@@ -63,8 +63,13 @@ const NavBar = () => {
         </Link>
       </div>
 
+
       <div className="flex justify-center items-center -xl:flex-1 -xl:justify-end">
-        <Link href="/#Donate" className="btn -sm:text-xs px-10 -sm:px-5 -sm:py-2.5 bg-secondary font-semibold">
+        <Link
+          href="https://paystack.com/pay/sustainobles" 
+          className="btn -sm:text-xs px-10 -sm:px-5 -sm:py-2.5 bg-secondary font-semibold"
+          target="_blank"
+         >
           <p className="text-primary">Donate</p>
         </Link>
       </div>

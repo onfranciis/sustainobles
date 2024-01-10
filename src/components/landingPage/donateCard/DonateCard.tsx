@@ -12,6 +12,9 @@ const DonateCard = () => {
 
   const handleForm = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (selection === "Money") {
+      window.open("https://paystack.com/pay/sustainobles", "_blank");
+    }
   };
 
   return (
@@ -36,6 +39,7 @@ const DonateCard = () => {
           type="submit"
           value="Donate Now"
           className="bg-secondary py-[14px] px-[75px] rounded-xl text-primary font-semibold text-base -sm:text-xs mt-6"
+          style={{ cursor: "pointer" }}
         />
       </form>
     </div>
