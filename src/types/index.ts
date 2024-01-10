@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import { CSSProperties } from "react";
 
 export interface IDonateCardBottomProp {
@@ -29,4 +30,14 @@ export interface IModalProjectBottomProps {
 
 export interface IGridPlugin {
   [value: string]: CSSProperties;
+}
+
+export interface IImageOverlay {
+  img: StaticImageData;
+  title: string;
+  body: string;
+  link?: {
+    text: string;
+    address: string;
+  };
 }
