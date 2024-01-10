@@ -1,4 +1,3 @@
-import { GridStyle } from "./src/utils/GridPlugin";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -38,15 +37,7 @@ const config: Config = {
       "-xs": { max: "480px" },
     },
   },
-  plugins: [
-    function ({ addUtilities }: any) {
-      const newUtilities = {
-        ...GridStyle,
-      };
-
-      addUtilities(GridStyle, ["responsive"]);
-    },
-  ],
+  plugins: [],
 };
 
 export default config;
