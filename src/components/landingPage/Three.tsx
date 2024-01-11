@@ -4,7 +4,7 @@ import { poppins } from "./Two";
 
 const Three = () => {
   return (
-    <div className="bg-white pb-[22px] px-16 -md:px-12 -sm:px-8 -xs:px-5">
+    <div className="bg-tertiary pb-[22px] px-16 -md:px-12 -sm:px-8 -xs:px-5">
       <p
         className={`${poppins.className} text-[64px] -lg:text-[52px] -md:text-[40px] -sm:text-4xl font-bold text-[#1E1E1E] mb-6`}
       >

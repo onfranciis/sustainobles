@@ -29,7 +29,7 @@ export default function Home() {
 
       <div
         id="us"
-        className="py-14 -sm:py-8 px-14 -md:px-10 -sm:px-4 bg-[#F6FFDC] flex -xl:flex-col items-center gap-20 -lg:gap-16 -sm:gap-10"
+        className="py-14 -sm:py-8 px-14 -md:px-10 -sm:px-4 bg-[#F6FFDC] flex -xl:flex-col-reverse items-center gap-20 -lg:gap-16 -sm:gap-10"
       >
         <div>
           <h2 className="mb-8 -md:mb-5 text-5xl -md:text-4xl -sm:text-[32px] -xl:text-center font-bold uppercase">
@@ -103,7 +103,7 @@ export default function Home() {
       <div id="purpose" className="pt-8 pb-[70px] px-14 -md:px-10 -sm:px-4 bg-[#F6FFDC]">
         <div
           style={{ backgroundImage: `url("/landing-two-a.png")` }}
-          className="col-span-2 pt-3 pb-10 -sm:pb-5 px-8 -md:px-6 -sm:px-4 bg-cover text-white rounded-2xl bg-fixed bg-center"
+          className="col-span-2 pt-3 pb-10 -sm:pb-5 px-8 -md:px-6 -sm:px-4 bg-cover text-white rounded-2xl bg-center"
         >
           <h2 className="mb-4 -sm:mb-1 text-[64px] -md:text-4xl -sm:text-[26px] leading-normal font-bold">
             Our Purpose
