@@ -26,8 +26,8 @@ const Footer = () => {
             Contact
           </p>
 
-          <Link href="" className="font-light"><span className="font-bold">Phone</span>: 080 0000 0000 </Link>
-          <Link href="mailto:sustainobles@sus.com" className="font-light"><span className="font-bold">Email</span>: sustainobles@sus.com</Link>
+          <Link href="" className="font-light"><span className="font-bold">Phone</span>: +2348 811 049 3649 </Link>
+          <Link href="mailto:sustainobles@gmail.com" className="font-light"><span className="font-bold">Email</span>: sustainobles@gmail.com</Link>
         </div>
 
         <div className="w-full flex flex-col">
