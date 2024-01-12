@@ -1,19 +1,19 @@
 export const GallerySections = [
   {
     slug: "community-clean-up",
-    number: 27,
+    number: 29,
   },
   {
     slug: "borehole-in-makoko",
-    number: 30,
+    number: 27,
   },
   {
     slug: "pad-a-girl-child",
-    number: 36,
+    number: 32,
   },
   {
     slug: "back-to-school-project",
-    number: 59,
+    number: 52,
   },
   {
     slug: "summer-coaching",
