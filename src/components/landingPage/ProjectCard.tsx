@@ -8,7 +8,8 @@ const ProjectCard = ({
   return (
     <div
       style={{ backgroundImage: `url(${image})` }}
-      className={`${poppins.className} min-w-[750px] -md:min-w-[600px] -sm:min-w-[320px] h-[450px] -md:h-[360px] -sm:h-[200px] flex flex-col justify-between bg-[url('/landing-three.png')] bg-no-repeat bg-center bg-cover p-8 -sm:p-4 rounded-[20px] -sm:rounded-[10px]`}
+      className={`${poppins.className} min-w-[750px] -md:min-w-[600px] -sm:min-w-[320px] h-[450px] -md:h-[360px] -sm:h-[200px] flex flex-col justify-between bg-[url('/landing-three.png')] bg-no-repeat bg-center bg-cover 
+      p-8 -sm:p-4 rounded-[20px] -sm:rounded-[10px] overflow-hidden`}
     >
       <p
         style={{ textShadow: "1px 1px 2px black" }}
@@ -18,9 +19,7 @@ const ProjectCard = ({
       </p>
 
       <div className="flex justify-between items-center">
-        <p className="text-2xl -md:text-2xl font-bold max-w-[163px]">
-          {/* N500,000 Raised */}
-        </p>
+        <p className="text-2xl font-bold w-full max-w-[320px] ">{body}</p>
 
         <Link
           href={url}
