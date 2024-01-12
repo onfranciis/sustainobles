@@ -14,15 +14,13 @@ const ImageOverlay = ({ img, title, body, link }: IImageOverlay) => {
       <p className={`text-[36px] -lg:text-4xl -md:text-2xl -sm:text-base leading-normal opacity-80 ${poppins.className}`}>
         {body}
       </p>
-      {link &&
-        <Link
-          href={link.address}
-          className="py-3 -sm:py-2.5 px-12 -sm:px-6 -sm:text-xs absolute bottom-6 right-6 rounded-xl -sm:rounded-lg bg-[#8AB440] text-[#1D401D]"
-        >
-          {link.text}
-        </Link>      
-      }
-
+      <Link
+        href={link.address}
+        aria-disabled={link.disabled}
+        className={`${link.disabled ? "pointer-events-none  bg-[#526d26]" : " bg-[#8AB440]"} py-3 -sm:py-2.5 px-12 -sm:px-6 -sm:text-xs absolute bottom-6 -sm:bottom-4 right-6 -sm:right-4 rounded-xl -sm:rounded-lg text-[#1D401D]`}
+      >
+        {link?.text}
+      </Link>
     </div>
   )
 }

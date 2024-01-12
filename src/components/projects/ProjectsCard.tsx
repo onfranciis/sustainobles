@@ -3,12 +3,13 @@ import { poppins } from "../landingPage/Two";
 import Link from "next/link";
 
 const ProjectsCard = ({
-  Data: { title, body, image, type, url },
+  Data: { title, body, image, type, url, id },
 }: IProjectCardProp) => {
   const Two = type === "Two";
 
   return (
     <div
+      id={id}
       style={{
         fontFamily: poppins.style.fontFamily,
       }}
@@ -16,7 +17,7 @@ const ProjectsCard = ({
         Two && "flex-row-reverse"
       }`}
     >
-      <div className="flex flex-col gap-6 -sm:gap-2 -sm:px-3 w-1/2 -lg:w-full">
+      <div className="flex flex-col gap-6 -sm:gap-1 -sm:px-3 w-1/2 -lg:w-full">
         <h5 className="text-5xl -md:text-4xl -sm:text-[26px] font-bold">
           {title}
         </h5>
@@ -25,11 +26,11 @@ const ProjectsCard = ({
 
       <div
         style={{ backgroundImage: `url(${image})` }}
-        className="min-h-[250px] sm:min-h-[598px] w-1/2 -lg:w-full bg-no-repeat bg-center bg-cover flex justify-center items-end rounded-xl -sm:rounded-b-none p-8"
+        className="min-h-[250px] sm:min-h-[598px] w-1/2 -lg:w-full bg-no-repeat bg-center bg-cover flex justify-center items-end rounded-xl -sm:rounded-b-none p-8 -sm:pb-3"
       >
         <Link
           href={url}
-          className="btn bg-secondary text-primary h-fit text-center"
+          className="btn bg-secondary text-primary h-fit -sm:text-sm text-center"
         >
           View Gallery
         </Link>

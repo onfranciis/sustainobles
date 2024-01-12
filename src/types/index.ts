@@ -15,6 +15,7 @@ export interface IDonateCardBottomProp {
 
 export interface IProjectCardProp {
   Data: {
+    id?: string;
     title: string;
     body: string;
     image: string;
@@ -36,7 +37,8 @@ export interface IImageOverlay {
   img: StaticImageData;
   title: string;
   body: string;
-  link?: {
+  link: {
+    disabled: boolean;
     text: string;
     address: string;
   };

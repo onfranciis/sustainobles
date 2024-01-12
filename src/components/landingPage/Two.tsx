@@ -10,9 +10,9 @@ export const poppins = Poppins({
 const Two = () => {
   return (
     <div className={poppins.className}>
-      <div className="relative px-16 -md:px-12 -sm:px-8 -xs:px-5">
+      <div className="relative px-16 -md:px-12 -sm:px-4 -xs:px-3">
         <div className="bg-[url('/landing-two-a.png')] bg-no-repeat bg-center bg-cover mt-[150px] -sm:mt-[60px] mb-[-200px] -sm:mb-[-150px] p-8 -sm:p-5 pr-[73px] pb-12 rounded-2xl -sm:rounded-[10px] left-0 right-0 ml-auto mr-auto">
-          <p className="mb-4 text-[64px] -lg:text-[52px] -md:text-[40px] -sm:text-[26px] font-bold">
+          <p className="mb-4 -sm:mb-1 text-[64px] -lg:text-[52px] -md:text-[40px] -sm:text-[26px] font-bold">
             Our Purpose
           </p>
 

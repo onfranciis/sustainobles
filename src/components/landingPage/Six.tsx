@@ -11,7 +11,7 @@ const Six = () => {
     },
   ]
   return (
-    <div className="bg-tertiary pb-[22px] pt-4 px-16 -md:px-12 -sm:px-8 -xs:px-5">
+    <div className="bg-tertiary pb-[22px] pt-4 px-16 -md:px-12 -sm:px-4 -xs:px-3">
       <p
         className={`${poppins.className} text-[64px] -lg:text-[52px] -md:text-[40px] -sm:text-4xl font-bold text-[#1E1E1E] mb-6`}
       >
@@ -34,28 +34,20 @@ const Six = () => {
         </div>
         <div className="relative flex-shrink-0 rounded-[20px] overflow-hidden">
           <div 
-            className="w-[335px] lg:w-[400px] h-[335px] lg:h-[400px] flex justify-center items-center blur-lg"
+            className="w-[335px] lg:w-[400px] h-[335px] lg:h-[400px] flex justify-center items-center blur-xl"
+            style={{ backgroundImage: `url("/events/charity-match.png")`}}
+          />     
+          <p className="w-max text-black text-xl font-bold uppercase px-3 py-1 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-secondary">Coming Soon</p>   
+        </div>
+        <div className="relative flex-shrink-0 rounded-[20px] overflow-hidden">
+          <div 
+            className="w-[335px] lg:w-[400px] h-[335px] lg:h-[400px] flex justify-center items-center blur-xl"
             style={{ backgroundImage: `url("/events/charity-match.png")`}}
           />     
           <p className="w-max text-black text-xl font-bold uppercase px-3 py-1 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-secondary">Coming Soon</p>   
         </div>
       </div>
     </div>
-    // <div className="pb-24 px-16 -md:px-12 -sm:px-8 -xs:px-5 bg-tertiary flex justify-center w-full ">
-    //   <div className="bg-[url('/landing-two.png')] bg-no-repeat bg-center bg-cover p-8 -md:p-4 pr-[73px] pb-12 rounded-2xl w-full">
-    //     <p className="mb-28 -md:mb-24 -sm:mb-20 text-[64px] -lg:text-[52px] -md:text-[40px] font-bold">
-    //       Events
-    //     </p>
-
-    //     <p className="-sm:mb-2 mb-3 text-[40px] -lg:text-4xl -md:text-2xl leading-normal opacity-80">
-    //       Medical outreach
-    //     </p>
-
-    //     <p className="text-[40px] -lg:text-4xl -md:text-2xl leading-normal opacity-80">
-    //       Football
-    //     </p>
-    //   </div>
-    // </div>
   );
 };
 

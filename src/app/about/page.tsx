@@ -32,7 +32,7 @@ export default function Home() {
         className="py-14 -sm:py-8 px-14 -md:px-10 -sm:px-4 bg-[#F6FFDC] flex -xl:flex-col-reverse items-center gap-20 -lg:gap-16 -sm:gap-10"
       >
         <div>
-          <h2 className="mb-8 -md:mb-5 text-5xl -md:text-4xl -sm:text-[32px] -xl:text-center font-bold uppercase">
+          <h2 className="mb-8 -md:mb-5 -sm:mb-2 text-5xl -md:text-4xl -sm:text-[32px] -xl:text-center font-bold uppercase">
             Who We Are
           </h2>
           <p>
@@ -85,7 +85,7 @@ export default function Home() {
         className="py-12 -sm:pb-5 px-14 -md:px-10 -sm:px-4 bg-[#F6FFDC] flex -xl:flex-col-reverse items-center gap-20 -lg:gap-16 -sm:gap-10"
       >
         <div>
-          <h2 className="mb-8 -md:mb-4 text-5xl -md:text-4xl -sm:text-[32px] -xl:text-center font-bold uppercase">
+          <h2 className="mb-8 -md:mb-4 -sm:mb-2 text-5xl -md:text-4xl -sm:text-[32px] -xl:text-center font-bold uppercase">
             Why We Started
           </h2>
           <p>
@@ -103,12 +103,12 @@ export default function Home() {
       <div id="purpose" className="pt-8 pb-[70px] px-14 -md:px-10 -sm:px-4 bg-[#F6FFDC]">
         <div
           style={{ backgroundImage: `url("/landing-two-a.png")` }}
-          className="col-span-2 pt-3 pb-10 -sm:pb-5 px-8 -md:px-6 -sm:px-4 bg-cover text-white rounded-2xl bg-center"
+          className="col-span-2 p-8 -sm:p-5 pr-[73px] pb-12 bg-cover text-white rounded-2xl bg-center"
         >
-          <h2 className="mb-4 -sm:mb-1 text-[64px] -md:text-4xl -sm:text-[26px] leading-normal font-bold">
+          <p className="mb-4 -sm:mb-3 text-[64px] -lg:text-[52px] -md:text-[40px] -sm:text-[26px] font-bold">
             Our Purpose
-          </h2>
-          <p className="text-[40px] -lg:text-3xl -md:text-xl -sm:text-sm  leading-normal opacity-80">
+          </p>
+          <p className="text-4xl -md:text-2xl -sm:text-sm leading-normal tracking-wider opacity-80">
             Empowering Children in disadvantaged areas by championing recycling
             initiatives, organizing book clubs and using the earning to fund
             their education. Also, harnessing and leveraging the power of

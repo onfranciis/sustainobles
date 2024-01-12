@@ -13,7 +13,7 @@ const NavBar = () => {
   return (
     <nav className="sticky z-50 -top-0 flex items-center justify-between w-full px-[60px] -lg:px-10 -md:px-[30px] -sm:px-5 py-3 bg-primary max-w-[2000px] ">
       {isMenu && (
-        <div className="w-full py-8 hidden gap-14 flex-col items-center absolute top-[72px] -sm:top-[60px] -sm:t left-0 bg-primary bg-opacity-[99%] text-2xl font-bold leading-tight -xl:flex">
+        <div className="w-full py-8 hidden gap-14 flex-col items-center absolute top-[72px] -sm:top-[54px] -sm:t left-0 bg-primary bg-opacity-[99%] text-2xl font-bold leading-tight -xl:flex">
           <Link href="/" onClick={() => setIsMenu(false)} className="">
             <p>Home</p>
           </Link>
@@ -67,7 +67,7 @@ const NavBar = () => {
       <div className="flex justify-center items-center -xl:flex-1 -xl:justify-end">
         <Link
           href="https://paystack.com/pay/sustainobles" 
-          className="btn -sm:text-xs px-10 -sm:px-5 -sm:py-2.5 bg-secondary font-semibold"
+          className="btn -sm:text-[10px] px-10 -sm:px-5 -sm:py-2 bg-secondary font-semibold"
           target="_blank"
          >
           <p className="text-primary">Donate</p>
