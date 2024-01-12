@@ -6,18 +6,18 @@ const ModalProjectsBottom = ({
   numberOfImages = 0,
 }: IModalProjectBottomProps) => {
   return (
-    <div className="w-full gallery-grid">
+    <div className="w-full gallery-grid gap-5 -md:gap-2">
       {Array.from({ length: numberOfImages }).map((_, i) => (
         <div
           style={{
             backgroundImage: `url("/projects/${directory}/image${i + 1}.png")`,
           }}
-          className={`h-[400px] w-full block 
+          className={`h-[400px] w-full block text-white rounded-xl 
           gallery-grid-item-small
           gallery-grid-item-${getAlphabet(i + 1)} 
           gallery-grid-item-large-${getAlphabetLG(i + 1)}
-          gallery-grid-item-medium-${getAlphabetMD(i + 1)}
-           text-white rounded-xl bg-no-repeat bg-center bg-cover gallery-image`}
+          gallery-grid-item-medium-${getAlphabetMD(i + 1)} 
+          bg-no-repeat bg-center bg-cover gallery-image`}
           key={i}
         ></div>
       ))}

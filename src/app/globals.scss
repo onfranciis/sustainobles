@@ -29,14 +29,13 @@ body {
 }
 
 .modalGallery {
-  background-color: #ffffff3a;
-  backdrop-filter: blur(8px);
+  background-color: #ffffffb4;
+  backdrop-filter: blur(12px);
   overscroll-behavior: contain;
 }
 
 .gallery-grid {
   display: grid;
-  gap: 20px;
 }
 
 .gallery-grid-item-a {
@@ -152,5 +151,7 @@ body {
   .gallery-grid-item-small {
     grid-column-start: 1;
     grid-column-end: 1;
+    height: unset;
+    aspect-ratio: 3/2;
   }
 }
