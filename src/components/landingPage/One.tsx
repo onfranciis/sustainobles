@@ -1,7 +1,7 @@
 const One = () => {
   return (
     <div>
-      <div className="-sm:h-56 pt-20 -xs:pt-16 pb-28 -xs:pb-20 px-[100px] -md:px-[50px] -sm:px-7 -xs:px-4 bg-[url('/landing-one.png')] bg-no-repeat bg-center bg-fixed bg-cover">
+      <div className="-sm:h-56 pt-20 -xs:pt-16 pb-28 -xs:pb-20 px-[100px] -md:px-[50px] -sm:px-7 -xs:px-4 bg-[url('/landing-one.png')] bg-no-repeat bg-center bg-cover">
         <p className="-sm:hidden text-8xl -lg:text-[80px] -md:text-6xl -sm:text-4xl font-bold max-w-[830px]">
           Reaching the
           <span className="text-secondary"> Sustainobles </span>

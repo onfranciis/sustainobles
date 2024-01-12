@@ -6,35 +6,47 @@ const Footer = () => {
   const year = date.getFullYear();
 
   return (
-    <footer className="flex-col items-center  px-[100px] -md:px-16 -sm:px-10 py-3 pt-16 -sm:pt-10">
-      <div className="flex flex-wrap gap-y-10 justify-between -sm:flex-col -sm:item-center -sm:justify-center">
-        <Link href="/" className="h-fit">
-          <Image
-            src="/logo.svg"
-            alt="Sustainobles logo"
-            width={196}
-            height={46}
-          />
-        </Link>
+    <footer className="flex-col items-center px-16 -md:px-10 -sm:px-8 py-3 pt-16 -sm:pt-10">
+      <div className="grid sm:grid-cols-3 gap-10">
+        <div className="sm:max-w-[200px] flex-shrink-0">
+          <Link href="/" className="h-fit">
+            <Image
+              src="/logo.svg"
+              alt="Sustainobles logo"
+              width={196}
+              height={46}
+            />
+          </Link>
 
-        <div className="flex flex-col sm:items-center text-[#CCCCCC]">
-          <p className="mb-5 font-semibold text-3xl underline underline-offset-4  text-[#F6FFDC]">
+          <p className="mt-3 tracking-wide font-light">
+            Empowering Futures, One Child at a Time. Join Us in Creating Lasting
+            Change for Children in Need.
+          </p>
+        </div>
+
+        <div className="flex flex-col flex-shrink-0 text-[#CCCCCC]">
+          <p className="mb-5 -sm:mb-1 font-semibold text-3xl -md:text-2xl text-[#F6FFDC]">
             Contact
           </p>
 
-          <Link href="">Phone: 080 0000 0000 </Link>
-          <Link href="">Email: sustainobles@sus.com</Link>
+          <Link href="tel:+23488110493649" className="font-light">
+            <span className="font-bold">Phone</span>: +2348 811 049 3649{" "}
+          </Link>
+          <Link href="mailto:sustainobles@gmail.com" className="font-light">
+            <span className="font-bold">Email</span>: sustainobles@gmail.com
+          </Link>
         </div>
 
-        <div className="flex flex-col sm:items-center">
-          <p className="mb-5 font-semibold text-3xl underline underline-offset-4  text-[#F6FFDC]">
+        <div className="w-full flex flex-col">
+          <p className="mb-5 -md:mb-3 font-semibold text-3xl -md:text-2xl text-[#F6FFDC]">
             Socials
           </p>
 
           <div className="flex items-center gap-8">
             {SocialMediaLinks.map((link) => (
-              <Link href="" key={link.src}>
+              <Link href={link.url} key={link.src} target="_blank">
                 <Image
+                  className="-md:w-[25px] -md:h-[25px] "
                   src={link.src}
                   alt={link.alt}
                   width={link.width}
@@ -46,7 +58,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex justify-center mt-12 text-xl">
+      <div className="flex justify-center mt-12 text-lg -sm:text-base">
         <p>Sustainobles © {year}</p>
       </div>
     </footer>
@@ -57,11 +69,11 @@ export default Footer;
 
 const SocialMediaLinks = [
   {
-    url: "",
+    url: "https://twitter.com/Sustainobles",
     src: "/twitter.svg",
     alt: "Twitter",
-    width: 32,
-    height: 32,
+    width: 28,
+    height: 28,
   },
   {
     url: "",
