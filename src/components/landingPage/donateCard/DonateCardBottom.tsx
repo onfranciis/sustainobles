@@ -39,7 +39,7 @@ const DonateCardBottom = ({
       ) : (
         <input
           type="text"
-          className="w-full border-[1px] border-primary rounded-[20px] py-4 -sm:py-3 px-5 font-semibold placeholder:font-semibold placeholder:text-base -sm:placeholder:text-xs placeholder:text-black"
+          className="w-full border-[1px] border-primary bg-inherit rounded-[20px] py-4 -sm:py-3 px-5 font-semibold placeholder:font-semibold placeholder:text-base -sm:placeholder:text-xs placeholder:text-black"
           placeholder="What you want to donate"
           value={item}
           onChange={(e) => setItem(e.target.value)}

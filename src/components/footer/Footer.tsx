@@ -18,7 +18,10 @@ const Footer = () => {
             />
           </Link>
 
-          <p className="mt-3 tracking-wide font-light">Empowering Futures, One Child at a Time. Join Us in Creating Lasting Change for Children in Need.</p>          
+          <p className="mt-3 tracking-wide font-light">
+            Empowering Futures, One Child at a Time. Join Us in Creating Lasting
+            Change for Children in Need.
+          </p>
         </div>
 
         <div className="flex flex-col flex-shrink-0 text-[#CCCCCC]">
@@ -26,8 +29,12 @@ const Footer = () => {
             Contact
           </p>
 
-          <Link href="" className="font-light"><span className="font-bold">Phone</span>: +2348 811 049 3649 </Link>
-          <Link href="mailto:sustainobles@gmail.com" className="font-light"><span className="font-bold">Email</span>: sustainobles@gmail.com</Link>
+          <Link href="tel:+23488110493649" className="font-light">
+            <span className="font-bold">Phone</span>: +2348 811 049 3649{" "}
+          </Link>
+          <Link href="mailto:sustainobles@gmail.com" className="font-light">
+            <span className="font-bold">Email</span>: sustainobles@gmail.com
+          </Link>
         </div>
 
         <div className="w-full flex flex-col">
@@ -37,7 +44,7 @@ const Footer = () => {
 
           <div className="flex items-center gap-8">
             {SocialMediaLinks.map((link) => (
-              <Link href="" key={link.src}>
+              <Link href={link.url} key={link.src} target="_blank">
                 <Image
                   className="-md:w-[25px] -md:h-[25px] "
                   src={link.src}
@@ -47,7 +54,7 @@ const Footer = () => {
                 />
               </Link>
             ))}
-          </div>         
+          </div>
         </div>
       </div>
 
@@ -62,7 +69,7 @@ export default Footer;
 
 const SocialMediaLinks = [
   {
-    url: "",
+    url: "https://twitter.com/Sustainobles",
     src: "/twitter.svg",
     alt: "Twitter",
     width: 28,

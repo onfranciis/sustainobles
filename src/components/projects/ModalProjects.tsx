@@ -17,14 +17,20 @@ const ModalProjects = ({
   return (
     <div
       style={{ fontFamily: poppins.style.fontFamily }}
-      className="h-screen w-screen max-w-[2000px] mx-auto fixed z-50 top-0 left-0 right-0 flex-1 text-primary py-24 px-16 overflow-auto modalGallery"
+      className="h-screen w-screen max-w-[2000px] mx-auto fixed z-50 top-0 left-0 right-0 flex-1 text-primary py-24 px-[60px] -md:px-4 overflow-auto modalGallery"
     >
       <div className="w-full flex justify-between items-center mb-6">
         <button
           onClick={handleBack}
-          className="flex items-center justify-center w-fit gap-3 text-[40px] font-bold"
+          className="flex items-center justify-center w-fit gap-3 text-[40px] -md:text-lg font-bold"
         >
-          <Image alt="back" src="/arrow-left.svg" height={32} width={32} />
+          <Image
+            alt="back"
+            src="/arrow-left.svg"
+            height={32}
+            width={32}
+            className="-md:h-[27px] -md:w-[23px]"
+          />
           <p>Gallery</p>
         </button>
 
@@ -34,6 +40,7 @@ const ModalProjects = ({
             src="/icon-primary.svg"
             height={73}
             width={68.74}
+            className="-md:hidden"
           />
         </Link>
       </div>
