@@ -10,7 +10,7 @@ const Five = () => {
       >
         Ongoing Projects
       </p>
-      <div className="flex overflow-x-auto gap-10 pb-2 sm:px-7 md:px-[50px]">
+      <div className="flex overflow-x-auto gap-10 -md:gap-3 pb-2 sm:px-7 md:px-[50px]">
         {DATA.map((card) => (
           <ProjectCard Data={card} key={card.title} />
         ))}

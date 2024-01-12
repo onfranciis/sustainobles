@@ -18,12 +18,14 @@ const ProjectCard = ({
         {title}
       </p>
 
-      <div className="flex justify-between items-center">
-        <p className="text-2xl font-bold w-full max-w-[320px] ">{body}</p>
+      <div className="flex justify-between items-center gap-2">
+        <p className="text-2xl font-bold w-full max-w-[320px] -sm:text-sm  ">
+          {body}
+        </p>
 
         <Link
           href={url}
-          className="btn bg-secondary text-primary text-base -sm:text-[10px] font-semibold px-[31.5px] -md:px-7 -sm:px-4 -sm:py-1 rounded-[20px]"
+          className="btn bg-secondary text-primary text-base -sm:text-[10px] font-semibold px-[31.5px] -md:px-7 -sm:px-4 -sm:py-1 rounded-[20px] whitespace-nowrap"
         >
           See more
         </Link>
