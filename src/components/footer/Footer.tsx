@@ -29,8 +29,8 @@ const Footer = () => {
             Contact
           </p>
 
-          <Link href="tel:+23488110493649" className="font-light">
-            <span className="font-bold">Phone</span>: +2348 811 049 3649{" "}
+          <Link href="tel:+2348110493649" className="font-light">
+            <span className="font-bold">Phone</span>: +234 811 049 3649{" "}
           </Link>
           <Link href="mailto:sustainobles@gmail.com" className="font-light">
             <span className="font-bold">Email</span>: sustainobles@gmail.com
@@ -76,21 +76,21 @@ const SocialMediaLinks = [
     height: 28,
   },
   {
-    url: "",
+    url: "https://www.facebook.com/profile.php?id=100076252804609",
     src: "/facebook.svg",
     alt: "Facebook",
     width: 32,
     height: 32,
   },
   {
-    url: "",
+    url: "https://www.instagram.com/sustainobles",
     src: "/instagram.svg",
     alt: "Instagram",
     width: 35,
     height: 35,
   },
   {
-    url: "",
+    url: "https://www.tiktok.com/@sustainobles",
     src: "/tiktok.svg",
     alt: "Tiktok",
     width: 32,

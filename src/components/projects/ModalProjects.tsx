@@ -17,9 +17,9 @@ const ModalProjects = ({
   return (
     <div
       style={{ fontFamily: poppins.style.fontFamily }}
-      className="h-screen w-screen max-w-[2000px] mx-auto fixed z-50 top-0 left-0 right-0 flex-1 text-primary py-24 px-[60px] -md:px-4 overflow-auto modalGallery"
+      className="max-h-screen min-h-screen w-screen max-w-[2000px] mx-auto fixed z-50 top-0 left-0 right-0 flex-1 text-primary pb-24 px-[60px] -md:px-4 overflow-y-scroll overflow-x-hidden modalGallery"
     >
-      <div className="w-full flex justify-between items-center mb-6">
+      <div className="w-full flex justify-between items-center mb-6 sticky top-16 backdrop-blur-lg p-3 my-16 rounded-md">
         <button
           onClick={handleBack}
           className="flex items-center justify-center w-fit gap-3 text-[40px] -md:text-lg font-bold"

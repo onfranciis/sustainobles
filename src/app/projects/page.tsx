@@ -12,6 +12,7 @@ export default function Home() {
         title="Completed Projects"
         body="Since our inception, Sustainobles have engaged in and completed many sustainable projects and we can pride ourselves and also take pride in our sponsors and volunteers as growing..."
         link={{
+          disabled: false,
           text: "See More",
           address: "/projects/completed",
         }}
@@ -22,6 +23,7 @@ export default function Home() {
         title="Ongoing Projects"
         body="Sustainobles is actively involved in and progressing through various ongoing sustainable projects. We take pride in our current initiatives and extend our gratitude to sponsors and volunteers who contribute to the success of these projects as they unfold and develop."
         link={{
+          disabled: false,
           text: "See More",
           address: "/projects/ongoing",
         }}
@@ -31,6 +33,11 @@ export default function Home() {
         img={happy}
         title="Upcoming Projects"
         body="Since our inception, Sustainobles have engaged in and completed many sustainable projects and we can pride ourselves and also take pride in our sponsors and volunteers as growing..."
+        link={{
+          disabled: true,
+          text: "See More",
+          address: "",
+        }}
       />
     </main>
   );

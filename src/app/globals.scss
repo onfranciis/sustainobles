@@ -28,6 +28,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .btn {
+    border-radius: 12px;
+  }
+}
+
 .modalGallery {
   background-color: #ffffffb4;
   backdrop-filter: blur(12px);

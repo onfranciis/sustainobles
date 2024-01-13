@@ -4,7 +4,7 @@ import { poppins } from "./Two";
 
 const Five = () => {
   return (
-    <div className="bg-tertiary pb-[22px] px-16 -md:px-12 -sm:px-8 -xs:px-5">
+    <div className="bg-tertiary pb-[22px] px-16 -md:px-12 -sm:px-4 -xs:px-3">
       <p
         className={`${poppins.className} text-[64px] -lg:text-[52px] -md:text-[40px] -sm:text-4xl font-bold text-[#1E1E1E] mb-6`}
       >
@@ -24,30 +24,30 @@ export default Five;
 const DATA: IProjectCardProp["Data"][] = [
   {
     title: "Collection of Bottles",
-    body: "Cleaned 4 Streets ",
+    body: "Used bottles to pay for children school fees",
     image: "/projects-card/image7.png",
-    url: "/projects/ongoing",
+    url: "/projects/ongoing#collection-of-bottles",
     type: "One",
   },
   {
     title: "Charity Football Tournament",
     body: "Engaged Celebrities and Started a club",
     image: "/projects-card/image8.png",
-    url: "/projects/ongoing",
+    url: "/projects/ongoing#charity-football-tournament",
     type: "One",
   },
   {
     title: "Book Reading Club",
     body: "Enrolled 70 Students From 2 Schools",
     image: "/projects-card/image9.png",
-    url: "/projects/ongoing",
+    url: "/projects/ongoing#book-reading-club",
     type: "One",
   },
   {
     title: "Monthly Essay Competition",
     body: "Held 2 competitions",
     image: "/projects-card/image10.png",
-    url: "/projects/ongoing",
+    url: "/projects/ongoing#monthly-essay-competition",
     type: "One",
   },
 ];
