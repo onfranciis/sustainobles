@@ -4,7 +4,7 @@ import DonateCard from "./donateCard/DonateCard";
 const Four = () => {
   return (
     <div
-      className="px-16 -md:px-12 -sm:px-4 w-full -xs:px-3 py-5 pb-9 -sm:mb- bg-tertiary relative"
+      className="px-16 -md:px-12 -sm:px-4 -xs:px-3 w-full py-9 bg-tertiary relative"
       id="Donate"
     >
       <div className="flex -xl:flex-col items-center justify-center gap-11 p-8 py-20 -sm:pt-8 bg-[url('/landing-five.png')] bg-no-repeat bg-center bg-cover rounded-[20px] -sm:rounded-[10px]">
