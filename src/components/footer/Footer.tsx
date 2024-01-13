@@ -29,8 +29,8 @@ const Footer = () => {
             Contact
           </p>
 
-          <Link href="tel:+23488110493649" className="font-light">
-            <span className="font-bold">Phone</span>: +2348 811 049 3649{" "}
+          <Link href="tel:+2348110493649" className="font-light">
+            <span className="font-bold">Phone</span>: +234 811 049 3649{" "}
           </Link>
           <Link href="mailto:sustainobles@gmail.com" className="font-light">
             <span className="font-bold">Email</span>: sustainobles@gmail.com
