@@ -12,8 +12,35 @@ const DonateCard = () => {
 
   const handleForm = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (selection === "Money") {
-      window.open("https://paystack.com/pay/sustainobles", "_blank");
+    try {
+      if (selection === "Money") {
+        window.open("https://paystack.com/pay/sustainobles", "_blank");
+      } else if (selection === "Material") {
+        //endpoint
+        const serverEnd = process.env.NEXT_PUBLIC_API_URL;
+        //POST REQUEST
+        fetch(serverEnd!, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: "Testing",
+          },
+          body: JSON.stringify({
+            name,
+            phoneNumber,
+            item,
+          }),
+        }).then((response) => {
+          console.log(response);
+          if (response.ok) {
+            console.log("Donation successful");
+          } else {
+            console.error("Donation failed");
+          }
+        });
+      }
+    } catch (error) {
+      console.error("Error:", error);
     }
   };
 
