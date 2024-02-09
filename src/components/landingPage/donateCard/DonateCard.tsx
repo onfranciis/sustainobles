@@ -1,6 +1,7 @@
 import { FormEvent, useState } from "react";
 import { poppins } from "../Two";
 import DonateCardTop from "./DonateCardTop";
+//import donateMaterial from "@/hooks/useDonationHelper";
 import DonateCardBottom from "./DonateCardBottom";
 
 const DonateCard = () => {
@@ -10,15 +11,20 @@ const DonateCard = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [item, setItem] = useState("");
 
+  //const donateMaterial = donateMaterial();
   const handleForm = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
       if (selection === "Money") {
         window.open("https://paystack.com/pay/sustainobles", "_blank");
       } else if (selection === "Material") {
-        //endpoint
         const serverEnd = process.env.NEXT_PUBLIC_API_URL;
-        //POST REQUEST
+        //const authorization = process.env.NEXT_PUBLIC_KEY;
+
+        /*if (!serverEnd || !authorization) {
+          throw new Error("Missing API URL or authorization token");
+        }*/
+
         fetch(serverEnd!, {
           method: "POST",
           headers: {
