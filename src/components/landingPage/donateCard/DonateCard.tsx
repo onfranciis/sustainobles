@@ -1,6 +1,7 @@
 import { FormEvent, useState } from "react";
 import { poppins } from "../Two";
 import DonateCardTop from "./DonateCardTop";
+//import donateMaterial from "@/hooks/useDonationHelper";
 import DonateCardBottom from "./DonateCardBottom";
 
 const DonateCard = () => {
@@ -10,10 +11,42 @@ const DonateCard = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [item, setItem] = useState("");
 
+  //const donateMaterial = donateMaterial();
   const handleForm = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (selection === "Money") {
-      window.open("https://paystack.com/pay/sustainobles", "_blank");
+    try {
+      if (selection === "Money") {
+        window.open("https://paystack.com/pay/sustainobles", "_blank");
+      } else if (selection === "Material") {
+        const serverEnd = process.env.NEXT_PUBLIC_API_URL;
+        //const authorization = process.env.NEXT_PUBLIC_KEY;
+
+        /*if (!serverEnd || !authorization) {
+          throw new Error("Missing API URL or authorization token");
+        }*/
+
+        fetch(serverEnd!, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: "Testing",
+          },
+          body: JSON.stringify({
+            name,
+            phoneNumber,
+            item,
+          }),
+        }).then((response) => {
+          console.log(response);
+          if (response.ok) {
+            console.log("Donation successful");
+          } else {
+            console.error("Donation failed");
+          }
+        });
+      }
+    } catch (error) {
+      console.error("Error:", error);
     }
   };
 
