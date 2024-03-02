@@ -43,3 +43,11 @@ export interface IImageOverlay {
     address: string;
   };
 }
+
+export interface IRequest {
+  url: string;
+  body: object;
+  setSuccess: (data: string) => void;
+  setError: (data: string) => void;
+  setLoading: (data: boolean) => void;
+}
