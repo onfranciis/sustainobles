@@ -9,7 +9,7 @@ export const useRequest = () => {
       method: "POST",
       body: JSON.stringify(body),
       headers: {
-        Authorization: "Bearer SutainoblesAuth",
+        Authorization: `Bearer ${config.TOKEN}`,
         "Content-Type": "application/json",
       },
     })
