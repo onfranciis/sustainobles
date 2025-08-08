@@ -1,44 +1,33 @@
-import Image from "next/image";
-import happy from "../../assets/happy.png";
-import imgOne from "../../../public/about-one.png";
-import imgTwo from "../../../public/about-two.png";
-import ImageOverlay from "@/components/projects/ImageOverlay";
+'use client';
 
-export default function Home() {
+import { DATA } from "@/lib/projects";
+import ProjectCard from "@/components/landingPage/ProjectCard";
+
+export default function Projects() {
   return (
-    <main className="min-h-screen py-14 px-14 -md:px-10 -sm:px-4 bg-[#F6FFDC] text-white">
-      <ImageOverlay
-        img={imgOne}
-        title="Completed Projects"
-        body="Since our inception, Sustainobles have engaged in and completed many sustainable projects and we can pride ourselves and also take pride in our sponsors and volunteers as growing..."
-        link={{
-          disabled: false,
-          text: "See More",
-          address: "/projects/completed",
-        }}
-      />
-
-      <ImageOverlay
-        img={imgTwo}
-        title="Ongoing Projects"
-        body="Sustainobles is actively involved in and progressing through various ongoing sustainable projects. We take pride in our current initiatives and extend our gratitude to sponsors and volunteers who contribute to the success of these projects as they unfold and develop."
-        link={{
-          disabled: false,
-          text: "See More",
-          address: "/projects/ongoing",
-        }}
-      />
-
-      <ImageOverlay
-        img={happy}
-        title="Upcoming Projects"
-        body="Since our inception, Sustainobles have engaged in and completed many sustainable projects and we can pride ourselves and also take pride in our sponsors and volunteers as growing..."
-        link={{
-          disabled: true,
-          text: "See More",
-          address: "",
-        }}
-      />
+    <main className="min-h-screen max-w-[1440px] mx-auto pt-8 pb-16 px-4 md:px-6 lg:px-10 xl:px-20 text-[#1e1e1e] font-normal">
+      <section className="mb-10 max-md:-mx-4 max-lg:-mx-6 max-xl:-mx-10 overflow-hidden">
+        <h2 className="px-4 md:px-6 lg:px-10 mb-4 text-center text-[28px] md:text-[32px] font-semibold">Projects</h2>
+        <div className="w-full max-md:px-4 max-lg:px-6 max-xl:px-10 grid gap-3 grid-flow-col grid-rows-2 overflow-x-scroll">
+          {DATA.map((item, index) => {
+            return (
+              <ProjectCard key={index} title={item.title} body={item.body} image={item.image} url={item.url} />
+            );
+          })}
+        </div>
+      </section>
+      <section className="max-md:-mx-4 max-lg:-mx-6 max-xl:-mx-10 overflow-hidden">
+        <h2 className="px-4 md:px-6 lg:px-10 mb-4 text-center text-[28px] md:text-[32px] font-semibold">
+          Projects/Events done to raise money
+        </h2>
+        <div className="w-full max-md:px-4 max-lg:px-6 max-xl:px-10 grid gap-3 grid-flow-col grid-rows-2 overflow-x-scroll">
+          {DATA.map((item, index) => {
+            return (
+              <ProjectCard key={index} title={item.title} body={item.body} image={item.image} url={item.url} />
+            );
+          })}
+        </div>
+      </section>
     </main>
   );
 }

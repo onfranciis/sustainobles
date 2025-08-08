@@ -14,14 +14,12 @@ export interface IDonateCardBottomProp {
 }
 
 export interface IProjectCardProp {
-  Data: {
-    id?: string;
-    title: string;
-    body: string;
-    image: string;
-    url: string;
-    type: "One" | "Two";
-  };
+  id?: string;
+  title: string;
+  body: string;
+  image: string;
+  url: string;
+  // type: "One" | "Two";
 }
 
 export interface IModalProjectBottomProps {
