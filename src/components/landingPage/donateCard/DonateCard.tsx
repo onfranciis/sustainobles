@@ -39,7 +39,7 @@ const DonateCard = () => {
 
   return (
     <div
-      className={`${poppins.className} -sm:mx-7 -sm:text-xs border border-neutral-400 bg-tertiary text-black flex flex-col py-[38px] px-[71px] -md:px-9 -sm:px-5 w-fit rounded-[20px] sm:min-h-[492px]`}
+      className="w-full h-full md:py-7 p-4 md:px-10 bg-white text-black rounded-lg"
     >
       <DonateCardTop selection={selection} setSelection={setSelection} />
       <div className="h-2 mb-2 mt-[-8px] pl-2">
@@ -64,7 +64,7 @@ const DonateCard = () => {
         <input
           type="submit"
           value="Donate Now"
-          className="bg-secondary py-[14px] px-[75px] rounded-xl text-primary font-semibold text-base -sm:text-xs mt-6"
+          className="bg-primary-gradient py-[14px] px-[75px] rounded-xl text-white font-semibold text-base -sm:text-xs mt-6"
           style={{ cursor: "pointer" }}
         />
       </form>
