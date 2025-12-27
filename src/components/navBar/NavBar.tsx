@@ -66,19 +66,16 @@ const NavBar = () => {
 
         <div className="flex justify-center items-center -xl:flex-1 -xl:justify-end">
           <Link
-            href="https://paystack.com/pay/sustainobles"
+            href="/#Donate"
             className="btn max-sm:rounded-lg max-sm:text-[10px] px-6 sm:px-10 py-2.5 bg-white font-semibold"
-            target="_blank"
+            scroll
           >
             <span className="bg-primary-gradient bg-clip-text text-transparent inline-block max-sm:text-sm">
               Donate
             </span>
           </Link>
 
-          <button
-            onClick={() => setIsMenu(!isMenu)}
-            className="ml-7 md:hidden"
-          >
+          <button onClick={() => setIsMenu(!isMenu)} className="ml-7 md:hidden">
             {!isMenu ? (
               <Image
                 className="w-6"

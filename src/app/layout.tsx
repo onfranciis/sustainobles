@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Fraunces } from "next/font/google";
 import NavBar from "@/components/navBar/NavBar";
 import Footer from "@/components/footer/Footer";
 import "./globals.scss";
 import OG from "./opengraph-image.png";
 
-const inter = Inter({ subsets: ["latin"] });
+const fraunces = Fraunces({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Sustainobles",
@@ -38,7 +38,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} w-full mx-auto`}>
+      <body className={`${fraunces.className} w-full mx-auto`}>
         <NavBar />
         {children}
         <Footer />
