@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import hamburger from "../../assets/hamburger.svg";
 import cancel from "../../assets/cancel.svg";
-import minLogo from "../../assets/min-logo.svg";
 import { useState } from "react";
 
 const NavBar = () => {
@@ -12,24 +11,27 @@ const NavBar = () => {
 
   return (
     <div className="sticky -top-0 z-50 w-full bg-primary-gradient ">
-      <nav className="max-w-[1440px] mx-auto px-4 md:px-6 lg:px-10 xl:px-20 py-3 flex items-center justify-between">
+      <nav
+        className="max-w-[1440px] mx-auto px-4 md:px-6 lg:px-10 xl:px-20 py-3 flex items-center
+      justify-between relative"
+      >
         {isMenu && (
-          <div className="w-full py-8 hidden gap-14 flex-col items-center absolute top-[72px] -sm:top-[54px] -sm:t left-0 bg-primary bg-opacity-[99%] text-2xl font-bold leading-tight -xl:flex">
-            <Link href="/" onClick={() => setIsMenu(false)} className="">
-              <p>Home</p>
-            </Link>
-
-            <Link href="/about" onClick={() => setIsMenu(false)} className="">
-              <p>About us</p>
-            </Link>
-
-            <Link
-              href="/projects"
-              onClick={() => setIsMenu(false)}
-              className="flex items-center gap-1"
-            >
-              <p>Projects</p>
-            </Link>
+          <div
+            className="w-full absolute top-[100%] left-0 bg-primary-gradient flex flex-col
+          items-center py-6 gap-6 min-[900px]:hidden"
+          >
+            {NavLinks.map((link, index) => {
+              return (
+                <Link
+                  key={index}
+                  href={link.url}
+                  onClick={() => setIsMenu(false)}
+                  className=""
+                >
+                  <p>{link.title}</p>
+                </Link>
+              );
+            })}
           </div>
         )}
 
@@ -41,27 +43,16 @@ const NavBar = () => {
             width={196}
             height={46}
           />
-          {/* <Image
-            className="md:hidden block"
-            src={minLogo.src}
-            alt="Sustainobles logo"
-            width={30}
-            height={28}
-          /> */}
         </Link>
 
-        <div className="max-md:hidden mr-24 flex items-center justify-center gap-5">
-          <Link href="/" className="btn ">
-            <p>Home</p>
-          </Link>
-
-          <Link href="/about" className="btn ">
-            <p>About us</p>
-          </Link>
-
-          <Link href="/projects" className="btn">
-            <p>Projects</p>
-          </Link>
+        <div className="max-[900px]:hidden flex items-center justify-center gap-5">
+          {NavLinks.map((link, index) => {
+            return (
+              <Link key={index} href={link.url} className="btn">
+                <p>{link.title}</p>
+              </Link>
+            );
+          })}
         </div>
 
         <div className="flex justify-center items-center -xl:flex-1 -xl:justify-end">
@@ -75,7 +66,10 @@ const NavBar = () => {
             </span>
           </Link>
 
-          <button onClick={() => setIsMenu(!isMenu)} className="ml-7 md:hidden">
+          <button
+            onClick={() => setIsMenu(!isMenu)}
+            className="ml-7 min-[900px]:hidden"
+          >
             {!isMenu ? (
               <Image
                 className="w-6"
@@ -101,3 +95,22 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+const NavLinks = [
+  {
+    title: "Home",
+    url: "/",
+  },
+  {
+    title: "About us",
+    url: "/about",
+  },
+  {
+    title: "Projects",
+    url: "/projects",
+  },
+  {
+    title: "Events",
+    url: "/events",
+  },
+];

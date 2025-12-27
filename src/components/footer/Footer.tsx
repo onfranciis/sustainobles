@@ -6,24 +6,27 @@ const Footer = () => {
   const year = date.getFullYear();
 
   return (
-    <footer className="flex-col items-center py-3 pt-16 max-sm:pt-10 bg-primary-gradient">
+    <footer className="flex-col items-center py-3 pt-16 max-sm:pt-10 bg-primary-gradient pb-20">
       <div className="max-w-[1440px] mx-auto px-4 md:px-6 lg:px-10 xl:px-20 flex flex-wrap justify-between gap-10">
-        <div className="sm:max-w-[288px] flex-shrink-0 mx-auto">
+        <div className="sm:max-w-[288px] mx-auto flex flex-col items-center">
           <Link href="/" className="h-fit">
             <Image
               src="/logo.svg"
               alt="Sustainobles logo"
-              className="max-sm:w-[160px] max-lg:w-[280px]"
+              className=" max-lg:w-[280px]"
               width={360}
               height={85}
             />
           </Link>
 
-          <p className="mt-[20px] mb-[32px] tracking-wide text-xl sm:text-2xl lg:text-3xl font-semibold">
+          <p
+            className="mt-[20px] tracking-wide text-2xl lg:text-3xl font-semibold
+          word-break"
+          >
             Empowering Futures, One Child at a Time.
           </p>
 
-          <p>Sustainobles © {year}</p>
+          <p className="max-[850px]:hidden mt-[32px]">Sustainobles © {year}</p>
         </div>
 
         <div className="max-w-[456px] space-y-3 mx-auto">
@@ -105,6 +108,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
+      <p className="mt-10 w-full text-center min-[850px]:hidden">
+        Sustainobles © {year}
+      </p>
     </footer>
   );
 };

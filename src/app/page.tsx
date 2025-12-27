@@ -9,12 +9,15 @@ export default function Home() {
   return (
     <main className="min-h-screen font-normal pb-20">
       <div className="w-full bg-primary-gradient">
-        <div className="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-20 flex max-md:flex-col m:items-center gap-9">
+        <div
+          className="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-20 flex max-md:flex-col max-md:pb-5 gap-9
+        pt-5"
+        >
           <p className="text-[40px] lg:text-[56px] xl:text-[64px] font-bold max-sm:leading-tight leading-snug">
             Together with Sustainobles, Every Child Thrives
           </p>
 
-          <div className="relative md:w-[55%] h-full flex-shrink-0 aspect-[694/400]">
+          <div className="relative md:w-[55%] h-full flex-shrink-0 aspect-[694/400] ">
             <Image className="" fill src={"/homepage-hero.png"} alt="" />
           </div>
         </div>
