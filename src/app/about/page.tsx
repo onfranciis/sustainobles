@@ -37,12 +37,15 @@ export default function Home() {
         <h2 className="mb-5 text-3xl md:text-[32px] font-semibold text-center">
           Our Story
         </h2>
+
         <div className="gap-8 relative mb-10">
           <Image
-            className="max-h-[910px] max-w-1/2 w-1/2 ml-5 md:ml-8 mb-2 object-contain float-right"
+            className="max-h-[910px] min-[450px]:w-1/2 min-[450px]:ml-5 mb-8 object-contain
+            min-[450px]:float-right "
             src={aboutOne}
             alt="happy children"
           />
+
           <div className="space-y-3.5">
             <p>
               Sustainobles was founded by Oyiga Micheal in 2021 to address the
@@ -85,10 +88,12 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section className="mb-10">
         <h2 className="mb-5 text-3xl md:text-[32px] font-semibold text-center">
           Our Purpose
         </h2>
+
         <p>
           We at Sustainobles are dedicated to making a real difference in the
           lives of children in rural and slum areas. By focusing on sustainable
@@ -98,10 +103,12 @@ export default function Home() {
           communities.
         </p>
       </section>
+
       <section className="mb-10">
         <h2 className="mb-5 text-3xl md:text-[32px] font-semibold text-center">
           Our Vision & Mission
         </h2>
+
         <div className="flex max-md:flex-col max-md:gap-4">
           <p className="md:w-1/2 border-r max-md:border-r-0 border-r-black/20 md:pr-4">
             We envision a world where Sustainobles plays a pivotal role in
@@ -109,7 +116,9 @@ export default function Home() {
             is to provide education, clean water, and sustainable communities,
             serving as beacons of hope and progress.
           </p>
+
           <hr className="md:hidden " />
+
           <p className="md:w-1/2 md:pl-4">
             Our mission is to empower children in rural and underserved
             communities by focusing on quality education, clean water, and
@@ -119,16 +128,19 @@ export default function Home() {
           </p>
         </div>
       </section>
+
       <section>
         <h2 className="mb-5 text-3xl md:text-[32px] font-semibold text-center">
           Our Founder
         </h2>
+
         <div className="gap-8 relative">
           <Image
-            className="w-1/2 mr-5 md:mr-8 mb-2 object-contain float-left"
+            className="min-[450px]:w-1/2 min-[450px]:mr-5 mb-8 object-contain float-left"
             src={aboutTwo}
             alt="Michael Oyiga"
           />
+
           <div className="space-y-2 tracking-normal">
             <p>
               Oyiga Micheal is the founder of Sustainobles, a charity dedicated
@@ -140,6 +152,7 @@ export default function Home() {
               research, inspired him to create a solution that merged education
               with environmental sustainability.
             </p>
+
             <p>
               At Sustainobles, Oyiga oversees strategic planning, community
               engagement, and program oversight, ensuring that the
@@ -148,6 +161,7 @@ export default function Home() {
               the belief that education is a fundamental right and that
               sustainable practices can bring about lasting change.
             </p>
+
             <p>
               His vision for Sustainobles is to expand the organization’s reach,
               helping more children access education through innovative
@@ -160,10 +174,12 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section className="mb-10 pt-10 clear-both">
         <h2 className="mb-5 text-3xl md:text-[32px] font-semibold text-center">
           How you can help
         </h2>
+
         <div>
           <p>
             Your support is vital to our mission at Sustainobles. By
@@ -172,11 +188,23 @@ export default function Home() {
             resources they need for a brighter future. Here are some meaningful
             ways you can make a difference:
           </p>
-          <div className="mt-5 flex sm:justify-center gap-5 flex-wrap">
+
+          <div
+            className="mt-5 flex justify-center items-center gap-5 flex-wrap
+          max-[460px]:flex-col max-[460px]:items-start"
+          >
             {helpIcons.map((icon) => {
               return (
-                <div key={icon.text} className="flex items-center gap-2 flex-shrink-0">
-                  <Image className="w-8 h-8 sm:w-10 sm:h-10 lg:w-[50px] lg:h-[50px]" src={icon.icon} alt="" />
+                <div
+                  key={icon.text}
+                  className="flex items-center gap-2 flex-shrink-0"
+                >
+                  <Image
+                    className="w-8 h-8 sm:w-10 sm:h-10 lg:w-[50px] lg:h-[50px]"
+                    src={icon.icon}
+                    alt=""
+                  />
+
                   <p>{icon.text}</p>
                 </div>
               );
