@@ -13,7 +13,7 @@ const OngoingProjects = () => {
 
 export default OngoingProjects;
 
-const DATA: IProjectCardProp["Data"][] = [
+const DATA: IProjectCardProp[] = [
   {
     title: "Collection of Bottles",
     id: "collection-of-bottles",
