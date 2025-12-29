@@ -19,7 +19,7 @@ export interface IProjectCardProp {
   body: string;
   image: string;
   url: string;
-  // type: "One" | "Two";
+  type?: "One" | "Two";
 }
 
 export interface IModalProjectBottomProps {

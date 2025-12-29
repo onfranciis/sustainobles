@@ -4,7 +4,9 @@ import Link from "next/link";
 
 const ProjectsCard = ({
   Data: { title, body, image, type, url, id },
-}: IProjectCardProp) => {
+}: {
+  Data: IProjectCardProp;
+}) => {
   const Two = type === "Two";
 
   return (

@@ -13,7 +13,7 @@ const CompletedProjects = () => {
 
 export default CompletedProjects;
 
-const DATA: IProjectCardProp["Data"][] = [
+const DATA: IProjectCardProp[] = [
   {
     title: "Community Clean Up",
     id: "community-clean-up",
