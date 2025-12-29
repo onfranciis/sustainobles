@@ -35,6 +35,14 @@ const DonateCardBottom = ({
             value={item}
             onChange={(e) => setItem(e.target.value)}
           />
+
+          <input
+            type="submit"
+            value="Donate Now"
+            className="bg-primary-gradient py-[14px] px-[75px] rounded-xl text-white font-semibold
+            text-base -sm:text-xs mt-6 w-fit mx-auto"
+            style={{ cursor: "pointer" }}
+          />
         </>
       ) : (
         <div className="">

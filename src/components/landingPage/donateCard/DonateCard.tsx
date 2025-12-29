@@ -38,9 +38,7 @@ const DonateCard = () => {
   };
 
   return (
-    <div
-      className="w-full h-full md:py-7 p-4 md:px-10 bg-white text-black rounded-lg"
-    >
+    <div className="w-full h-full md:py-7 p-4 md:px-10 bg-white text-black rounded-lg">
       <DonateCardTop selection={selection} setSelection={setSelection} />
       <div className="h-2 mb-2 mt-[-8px] pl-2">
         {success && <p className="text-[green]">{success}</p>}
@@ -59,13 +57,6 @@ const DonateCard = () => {
           setName={setName}
           setPhoneNumber={setPhoneNumber}
           setItem={setItem}
-        />
-
-        <input
-          type="submit"
-          value="Donate Now"
-          className="bg-primary-gradient py-[14px] px-[75px] rounded-xl text-white font-semibold text-base -sm:text-xs mt-6"
-          style={{ cursor: "pointer" }}
         />
       </form>
     </div>

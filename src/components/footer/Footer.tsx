@@ -6,51 +6,83 @@ const Footer = () => {
   const year = date.getFullYear();
 
   return (
-    <footer className="flex-col items-center py-3 pt-16 max-sm:pt-10 bg-primary-gradient">
-      <div className="max-w-[1440px] mx-auto px-4 md:px-6 lg:px-10 xl:px-20 flex max-lg:flex-col justify-between gap-10">
-        <div className="sm:max-w-[288px] flex-shrink-0">
+    <footer className="flex-col items-center py-3 pt-16 max-sm:pt-10 bg-primary-gradient pb-20">
+      <div className="max-w-[1440px] mx-auto px-4 md:px-6 lg:px-10 xl:px-20 flex flex-wrap justify-between gap-10">
+        <div className="sm:max-w-[288px] mx-auto flex flex-col items-center">
           <Link href="/" className="h-fit">
             <Image
               src="/logo.svg"
               alt="Sustainobles logo"
-              className="max-sm:w-[160px] max-lg:w-[280px]"
+              className=" max-lg:w-[280px]"
               width={360}
               height={85}
             />
           </Link>
 
-          <p className="mt-3 tracking-wide text-xl sm:text-2xl lg:text-3xl font-semibold">
+          <p
+            className="mt-[20px] tracking-wide text-2xl lg:text-3xl font-semibold
+          word-break"
+          >
             Empowering Futures, One Child at a Time.
           </p>
+
+          <p className="max-[850px]:hidden mt-[32px]">Sustainobles © {year}</p>
         </div>
 
-        <div className="max-w-[456px] space-y-3">
-          <p className="text-white text-lg sm:text-xl lg:text-2xl">Join Us in Creating Lasting Change for Children in Need.</p>
+        <div className="max-w-[456px] space-y-3 mx-auto">
+          <p className="text-white text-lg sm:text-xl lg:text-2xl">
+            Join Us in Creating Lasting Change for Children in Need.
+          </p>
+
           <form action="" className="space-y-3 flex flex-col items-center">
             <div className="flex gap-3 w-full">
-              <input className="h-[52px] w-full px-3 py-4 outline-none rounded-lg text-black font-semibold" type="text" placeholder="First Name" />
-              <input className="h-[52px] w-full px-3 py-4 outline-none rounded-lg text-black font-semibold" type="text" placeholder="Last Name" />
+              <input
+                className="h-[52px] w-full px-3 py-4 outline-none rounded-lg text-black font-semibold"
+                type="text"
+                placeholder="First Name"
+              />
+
+              <input
+                className="h-[52px] w-full px-3 py-4 outline-none rounded-lg text-black font-semibold"
+                type="text"
+                placeholder="Last Name"
+              />
             </div>
-            <input className="h-[52px] w-full px-3 py-4 outline-none rounded-lg text-black font-semibold" type="tel" placeholder="Phone Number" />
-            <input className="h-[52px] w-full px-3 py-4 outline-none rounded-lg text-black font-semibold" type="email" placeholder="Email Address" />
-            <button className="h-[52px] w-[120px] mx-auto bg-white text-transparent font-semibold rounded-lg" type="submit">
+
+            <input
+              className="h-[52px] w-full px-3 py-4 outline-none rounded-lg text-black font-semibold"
+              type="tel"
+              placeholder="Phone Number"
+            />
+
+            <input
+              className="h-[52px] w-full px-3 py-4 outline-none rounded-lg text-black font-semibold"
+              type="email"
+              placeholder="Email Address"
+            />
+
+            <button
+              className="py-[6px] px-[31px] mx-auto bg-white text-transparent font-semibold rounded-lg"
+              type="submit"
+            >
               <span className="bg-primary-gradient bg-clip-text">Submit</span>
             </button>
           </form>
         </div>
 
-        <div className="space-y-10 text-white">
+        <div className="space-y-10 text-white mx-auto">
           <div className="space-y-3">
-            <p className="font-semibold text-2xl lg:text-3xl">
-              Contact
-            </p>
+            <p className="font-semibold text-2xl lg:text-3xl">Contact us</p>
 
             <div className="space-y-1">
               <Link href="tel:+2348110493649" className="block font-light">
-                <span className="font-bold">Phone</span>: +234 811 049 3649{" "}
+                <span className="">Phone</span>: +234 811 049 3649{" "}
               </Link>
-              <Link href="mailto:sustainobles@gmail.com" className="block font-light">
-                <span className="font-bold">Email</span>: sustainobles@gmail.com
+              <Link
+                href="mailto:sustainobles@gmail.com"
+                className="block font-light"
+              >
+                <span className="">Email</span>: sustainobles@gmail.com
               </Link>
             </div>
           </div>
@@ -77,9 +109,9 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex justify-center mt-12 text-lg max-sm:text-base">
-        <p>Sustainobles © {year}</p>
-      </div>
+      <p className="mt-10 w-full text-center min-[850px]:hidden">
+        Sustainobles © {year}
+      </p>
     </footer>
   );
 };

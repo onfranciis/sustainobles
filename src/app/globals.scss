@@ -10,16 +10,15 @@
 
 html {
   background-color: white;
+  scroll-behavior: smooth;
 }
 
 body {
-  max-width: 2000px;
   width: 100%;
   color: white;
   font-size: 16px;
   font-weight: 400;
   margin: 0 auto;
-  scroll-behavior: smooth;
 }
 
 @layer components {
