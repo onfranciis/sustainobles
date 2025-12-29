@@ -13,12 +13,12 @@ const NavBar = () => {
     <div className="sticky -top-0 z-50 w-full bg-primary-gradient ">
       <nav
         className="max-w-[1440px] mx-auto px-4 md:px-6 lg:px-10 xl:px-20 py-3 flex items-center
-      justify-between relative"
+      justify-between relative w-full"
       >
         {isMenu && (
           <div
             className="w-full absolute top-[100%] left-0 bg-primary-gradient flex flex-col
-          items-center py-6 gap-6 min-[900px]:hidden"
+          items-center py-6 gap-6 min-[900px]:hidden drop-shadow-lg"
           >
             {NavLinks.map((link, index) => {
               return (

@@ -38,7 +38,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${fraunces.className} w-full mx-auto`}>
+      <body className={`${fraunces.className} w-full mx-auto max-w-[1200px]`}>
         <NavBar />
         {children}
         <Footer />

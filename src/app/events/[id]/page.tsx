@@ -1,57 +1,76 @@
-import Image from "next/image";
-import testImg from "../../../../assets/project-1.png";
-import calendarIcon from "../../../../assets/calendar-icon.png";
-import timeIcon from "../../../../assets/time-icon.png";
-import locationIcon from "../../../../assets/location-icon.png";
+"use client";
+
 import Button from "@/components/ui/button";
+import { Events } from "@/lib/events";
+import Image, { StaticImageData } from "next/image";
+import { notFound, useParams } from "next/navigation";
+import calendarIcon from "../../../assets/calendar-icon.png";
+import locationIcon from "../../../assets/location-icon.png";
+import timeIcon from "../../../assets/time-icon.png";
+
+export interface IEventPageProps {
+  bannerImage: StaticImageData;
+  title: string;
+  date: string;
+  time: string;
+  location: string;
+  description: string;
+  googleMapUrl?: string;
+  ticketUrl?: string;
+}
 
 const Project = () => {
+  const { id } = useParams();
+  const props = Events[id.toString()];
+
+  if (!props) {
+    notFound();
+  }
+
   const detailIcons = [
     {
       icon: calendarIcon,
-      text: "Saturday, April 2025",
+      text: props?.date,
     },
     {
       icon: timeIcon,
-      text: "11am",
+      text: props?.time,
     },
     {
       icon: locationIcon,
-      text: "Campus Mini Stadium",
+      text: props?.location,
     },
   ];
 
   return (
     <div className="max-w-[1400px] mx-auto px-4 py-12 text-xl text-[#1e1e1e]">
       <div className="relative w-full aspect-[1240/600] mb-12 bg-gray-300">
-        {/* <Image fill src={} alt="" /> */}
+        <Image fill src={props?.bannerImage} alt="" />
       </div>
-      <h1 className="mb-6 text-[40px] leading-tight font-semibold">
-        Sustainobles Charity Football Match: Influencers VS Celebrities, Female
-        & Male, raise funds for out of school children
+
+      <h1 className="mb-6 text-[30px] md:text-[40px] leading-tight font-semibold">
+        {props?.title}
       </h1>
-      <div className="flex items-center gap-12 mb-10">
-        {detailIcons.map((icon, index) => {
-          return (
-            <div key={index} className="flex items-center gap-2 flex-shrink-0">
-              <Image className="w-[45px] h-[45px]" src={icon.icon} alt="" />
-              <p>{icon.text}</p>
-            </div>
-          );
-        })}
-        <Button className="ml-auto">Buy Tickets</Button>
+
+      <div className="flex justify-between flex-wrap mb-10 gap-x-12 gap-y-5">
+        <div className="flex items-center gap-x-12 gap-y-5 flex-wrap">
+          {detailIcons.map((icon, index) => {
+            return (
+              <div key={index} className="flex items-center gap-2">
+                <Image className="w-[45px] h-[45px]" src={icon.icon} alt="" />
+                <p className="">{icon.text}</p>
+              </div>
+            );
+          })}
+        </div>
+
+        <Button className="">Buy Tickets</Button>
       </div>
+
       <div className="mb-10 space-y-3.5">
         <h2 className="text-[32px] font-semibold">Event Description</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+
+        <p>{props?.description}</p>
         <ul>
           <li>When:</li>
           <li>Event Starts:</li>
@@ -61,8 +80,20 @@ const Project = () => {
 
       <div>
         <h2 className="mb-6 text-[40px] font-semibold">Location</h2>
+
         <div className="relative w-full aspect-[1240/600] mb-12 bg-gray-300">
-          {/* <Image fill src={} alt="" /> */}
+          <iframe
+            src={props?.googleMapUrl}
+            width="100%"
+            height="100%"
+            style={{
+              border: 0,
+              display: props?.googleMapUrl ? "block" : "none",
+            }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </div>
