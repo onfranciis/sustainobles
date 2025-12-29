@@ -13,7 +13,7 @@ const Three = () => {
 
       <div className="flex overflow-x-auto gap-10 -md:gap-3 pb-2 sm:px-7 md:px-[50px]">
         {DATA.map((card) => (
-          <ProjectCard Data={card} key={card.title} />
+          <ProjectCard {...card} key={card.title} />
         ))}
       </div>
     </div>
@@ -22,7 +22,7 @@ const Three = () => {
 
 export default Three;
 
-const DATA: IProjectCardProp["Data"][] = [
+const DATA: IProjectCardProp[] = [
   {
     title: "Community Clean Up",
     body: "Cleaned 5 Streets",
