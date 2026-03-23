@@ -21,6 +21,18 @@ body {
   margin: 0 auto;
 }
 
+.link_dot {
+  height: 2px;
+  background-color: white;
+  display: block;
+  transition-duration: 0.3s;
+  margin: 0 auto;
+}
+
+a:hover .link_dot {
+  width: 100%;
+}
+
 @layer components {
   .btn {
     @apply rounded-xl w-fit py-3 px-3;

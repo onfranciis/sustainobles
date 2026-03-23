@@ -5,9 +5,11 @@ import Link from "next/link";
 import hamburger from "../../assets/hamburger.svg";
 import cancel from "../../assets/cancel.svg";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const NavBar = () => {
   const [isMenu, setIsMenu] = useState(false);
+  const pathname = usePathname();
 
   return (
     <div className="sticky -top-0 z-50 w-full bg-primary-gradient ">
@@ -21,6 +23,8 @@ const NavBar = () => {
           items-center py-6 gap-6 min-[900px]:hidden drop-shadow-lg"
           >
             {NavLinks.map((link, index) => {
+              const isActive = pathname === link.url;
+
               return (
                 <Link
                   key={index}
@@ -29,6 +33,9 @@ const NavBar = () => {
                   className=""
                 >
                   <p>{link.title}</p>
+                  <span
+                    className={`link_dot ${isActive ? "w-1/2" : "w-0"}`}
+                  ></span>
                 </Link>
               );
             })}
@@ -47,9 +54,14 @@ const NavBar = () => {
 
         <div className="max-[900px]:hidden flex items-center justify-center gap-5">
           {NavLinks.map((link, index) => {
+            const isActive = pathname === link.url;
+
             return (
               <Link key={index} href={link.url} className="btn">
                 <p>{link.title}</p>
+                <span
+                  className={`link_dot ${isActive ? "w-1/2" : "w-0"}`}
+                ></span>
               </Link>
             );
           })}
@@ -58,11 +70,11 @@ const NavBar = () => {
         <div className="flex justify-center items-center -xl:flex-1 -xl:justify-end">
           <Link
             href="/#Donate"
-            className="btn max-sm:rounded-lg max-sm:text-[10px] px-6 sm:px-10 py-2.5 bg-white font-semibold"
+            className="btn max-sm:rounded-lg max-sm:text-[10px] px-2 sm:px-3 py-1.5 bg-white font-semibold"
             scroll
           >
             <span className="bg-primary-gradient bg-clip-text text-transparent inline-block max-sm:text-sm">
-              Donate
+              Donate Now
             </span>
           </Link>
 
