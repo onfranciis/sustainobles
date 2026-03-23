@@ -5,6 +5,7 @@ import Image from "next/image";
 import ProjectCard from "@/components/landingPage/ProjectCard";
 import { DATA } from "@/lib/projects";
 import Hero from "@/components/landingPage/Hero";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -28,10 +29,19 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="mt-12 max-md:-mx-4 max-lg:-mx-6 max-xl:-mx-10 overflow-hidden">
-          <h2 className="mb-2 md:mb-4 text-[28px] md:text-[32px] font-semibold text-center">
-            Projects
-          </h2>
+        <div className="mt-12 max-md:-mx-4 max-lg:-mx-6 max-xl:-mx-10 overflow-visible w-full">
+          <div className="w-full flex justify-between items-center px-5">
+            <h2 className="mb-2 md:mb-4 text-[28px] md:text-[32px] font-semibold text-center">
+              Project
+            </h2>
+
+            <Link
+              href="/projects"
+              className="bg-primary-gradient bg-clip-text text-transparent "
+            >
+              View All
+            </Link>
+          </div>
 
           <div className="w-full max-md:px-4 max-lg:px-6 max-xl:px-10 grid gap-3 grid-flow-col grid-rows-2 overflow-x-scroll">
             {DATA.map((item, index) => {
@@ -65,9 +75,18 @@ export default function Home() {
         </div>
 
         <div className="mt-12 overflow-hidden">
-          <h2 className="mb-4 text-[32px] font-semibold text-center">
-            Projects/Events done to raise money
-          </h2>
+          <div className="w-full flex justify-between items-center px-5">
+            <h2 className="mb-2 md:mb-4 text-[28px] md:text-[32px] font-semibold text-center">
+              Projects/Events done to raise money
+            </h2>
+
+            <Link
+              href="/events"
+              className="bg-primary-gradient bg-clip-text text-transparent "
+            >
+              View All
+            </Link>
+          </div>
 
           <div className="w-full grid gap-3 grid-flow-col grid-rows-2 overflow-x-scroll">
             {DATA.map((item, index) => {
