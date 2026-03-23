@@ -73,7 +73,7 @@ const NavBar = () => {
             className="btn max-sm:rounded-lg max-sm:text-[10px] px-2 sm:px-3 py-1.5 bg-white font-semibold"
             scroll
           >
-            <span className="bg-primary-gradient bg-clip-text text-transparent inline-block max-sm:text-sm">
+            <span className="bg-primary-gradient bg-clip-text text-transparent inline-block w-fit">
               Donate Now
             </span>
           </Link>
