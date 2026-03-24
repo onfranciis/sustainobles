@@ -71,11 +71,6 @@ const Project = () => {
         <h2 className="text-[32px] font-semibold">Event Description</h2>
 
         <p>{props?.description}</p>
-        <ul>
-          <li>When:</li>
-          <li>Event Starts:</li>
-          <li>Where:</li>
-        </ul>
       </div>
 
       <div>

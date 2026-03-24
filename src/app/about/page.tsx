@@ -1,5 +1,5 @@
 import Image from "next/image";
-import aboutOne from "../../assets/about-1.png";
+import merge from "../../../public/about-us-grid/merge.png";
 import aboutTwo from "../../assets/about-2.png";
 import moneyIcon from "../../assets/money-icon.png";
 import hangerIcon from "../../assets/hanger-icon.png";
@@ -40,9 +40,9 @@ export default function Home() {
 
         <div className="gap-8 relative mb-10">
           <Image
-            className="max-h-[910px] min-[450px]:w-1/2 min-[450px]:ml-5 mb-8 object-contain
-            min-[450px]:float-right "
-            src={aboutOne}
+            className="max-h-[910px] min-[550px]:w-1/2 min-[550px]:ml-5 mb-8 object-contain
+            min-[550px]:float-right pt-10"
+            src={merge}
             alt="happy children"
           />
 

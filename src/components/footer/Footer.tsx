@@ -62,10 +62,12 @@ const Footer = () => {
             />
 
             <button
-              className="py-[6px] px-[31px] mx-auto bg-white text-transparent font-semibold rounded-lg"
+              className="py-[6px] px-[14px] mx-auto bg-white text-transparent font-semibold rounded-lg"
               type="submit"
             >
-              <span className="bg-primary-gradient bg-clip-text">Submit</span>
+              <span className="bg-primary-gradient bg-clip-text">
+                Donate Now
+              </span>
             </button>
           </form>
         </div>

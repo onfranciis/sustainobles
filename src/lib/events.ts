@@ -6,7 +6,7 @@ export const Events: Record<string, IEventPageProps> = {
   "sustainobles-charity-football-match": {
     bannerImage: charityFootballMatchBanner,
     title:
-      "Sustainobles Charity Football Match: Influencers VS Celebrities, Female & Male",
+      "Sustainobles Charity Football Match: Influencers VS Celebrities, Female & Male, raise funds for out of school children",
     date: "Saturday, April 2025",
     time: "11am",
     location: "Campus Mini Stadium",
