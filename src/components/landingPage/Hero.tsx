@@ -44,7 +44,7 @@ const variants: HeroVariant[] = [
     image: "/homepage-hero.png",
   },
   {
-    headline: "Reaching the Sustainobles Goal One Project at a Time",
+    headline: "Advancing Sustainoble Goals, a Project at a Time",
     image: "/projects/back-to-school-project/image20.png",
   },
   {
@@ -100,7 +100,7 @@ const Hero: FC = () => {
   const isEntering = phase === "enter";
 
   const containerStyle: CSSProperties = {
-    transition: `background-color ${TRANSITION}ms cubic-bezier(0.76, 0, 0.24, 1)`,
+    transition: `all 1s ease`,
   };
 
   const headlineStyle: CSSProperties = {
@@ -110,7 +110,10 @@ const Hero: FC = () => {
   };
 
   return (
-    <div className="w-full bg-primary-gradient min-h-[295px]">
+    <div
+      style={containerStyle}
+      className="w-full bg-primary-gradient min-h-[295px] overflow-hidden"
+    >
       <div
         className="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-20 flex max-md:flex-col max-md:pb-5 gap-9
         pt-5"
